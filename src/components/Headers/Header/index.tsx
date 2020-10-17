@@ -1,17 +1,8 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import { FiFacebook, FiTwitter } from 'react-icons/fi';
-import { MdShoppingBasket } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
-import logoImg from '../../../assets/images/logo.svg';
-import {
-  Container,
-  HeaderContainer,
-  Cart,
-  BoxLogin,
-  ButtonLogout,
-  BoxLogado,
-} from './styles';
+import { Container, HeaderContainer } from './styles';
 
 const Header: React.FC = () => {
   return (

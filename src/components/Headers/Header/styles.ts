@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 
-import { shade } from 'polished';
 import styled from 'styled-components';
 
 import { colors } from '../../../styles';

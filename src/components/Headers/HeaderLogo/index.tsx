@@ -1,7 +1,4 @@
-import React, { useMemo } from 'react';
-import { FiPower, FiLogIn } from 'react-icons/fi';
-import { MdShoppingBasket } from 'react-icons/md';
-import { Link } from 'react-router-dom';
+import React from 'react';
 
 import logoImg from '../../../assets/dedim.png';
 import { Container, HeaderContainer } from './styles';

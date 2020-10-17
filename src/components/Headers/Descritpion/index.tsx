@@ -1,9 +1,5 @@
-import React, { useMemo } from 'react';
-import { FiPower, FiLogIn } from 'react-icons/fi';
-import { MdShoppingBasket } from 'react-icons/md';
-import { Link } from 'react-router-dom';
+import React from 'react';
 
-import logoImg from '../../../assets/images/logo.svg';
 import { Container, HeaderContainer } from './styles';
 
 const Description: React.FC = () => {
