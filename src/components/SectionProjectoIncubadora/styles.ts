@@ -133,7 +133,8 @@ export const HeaderContainer = styled.div`
               color: ${colors.colorTextBase};
               font-size: 17px;
               margin-left: 20px;
-              margin-bottom: 0px;
+
+              margin-top: -30px;
             }
             article {
               align-items: center;
@@ -141,6 +142,7 @@ export const HeaderContainer = styled.div`
               display: flex;
               flex-direction: row;
               padding: 10px 2rem;
+              margin-bottom: 20px;
               svg {
                 margin-top: 10px;
                 margin-right: 30px;

@@ -19,7 +19,10 @@ const SectionProjectoIncubadora: React.FC = () => {
 
               <div>
                 <h2>Objetivo Geral do projeto</h2>
-                <p>Auxiliar no transporte de sua mudança.</p>
+                <p>
+                  Atender pessoas desempregadas da região e proporcionar o
+                  acesso ao emprego com os auxílio dos empresários de Palmas.
+                </p>
               </div>
 
               <aside>
@@ -28,14 +31,20 @@ const SectionProjectoIncubadora: React.FC = () => {
                   <article>
                     <FiArrowRight size={26} color={colors.colorTextBase} />
                     <p>
-                      Auxiliar no transporte de móveis e eletrodomésticospara
-                      pessoas que necessitam de fazer MUDANÇA para um novo lar.
+                      Atender as pessoas que procuram empregos, e com
+                      entrevistas, verificando o seu perfil e suas habilidades,
+                      as quais serão encaminhadas para o emprego adequado e
+                      empresas de Palmas.
                     </p>
                   </article>
                   <div>
                     <FiArrowRight size={26} color={colors.colorTextBase} />
                     <p>
-                      Arcar com os custos de mudança (caminhão) para o cidadão.
+                      Integrar as pessoas atendidas com seus respectivos
+                      currículos, onde serão demonstrados suas habilidades,
+                      elevar sua autoestima e pontuar seus pontos fortes,
+                      entregando as empresas existentes em Palmas para as
+                      contratações.
                     </p>
                   </div>
                 </span>
