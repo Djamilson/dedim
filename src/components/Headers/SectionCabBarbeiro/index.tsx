@@ -1,22 +1,16 @@
 import React from 'react';
 
-import backgroundImgGabinete from '../../../assets/download_.png';
-import backgroundImgIncubadora from '../../../assets/incubadora_.png';
-import backgroundImgNovolar from '../../../assets/novolar.png';
 import backgroundImgCabeleireiro from '../../../assets/sign-in-background.png';
 import { Container, HeaderContainer, HistoryAbout, About } from './styles';
 
-const Description: React.FC = () => {
+const SectionCabBarbeiro: React.FC = () => {
   return (
     <Container>
       <HeaderContainer>
         <ul>
           <li>
             <HistoryAbout>
-              <img
-                src={backgroundImgCabeleireiro}
-                alt="Cabeleireiro e Barbeiro no Bairro"
-              />
+              <h1>mmdfjkjkjkjkj</h1>
             </HistoryAbout>
             <section>
               <article>
@@ -42,10 +36,7 @@ const Description: React.FC = () => {
             <section>
               <article>
                 <span>Minha informações</span>
-                <p>
-                  Sou Valto Rolim dos Santos, conhecido como Dedim Barbeiro.
-                  Candidato a Vereador com o número 10.888.
-                </p>
+                <p>Cabeleireiro e Barbeiro no Bairro</p>
               </article>
             </section>
           </li>
@@ -55,4 +46,4 @@ const Description: React.FC = () => {
   );
 };
 
-export default Description;
+export default SectionCabBarbeiro;

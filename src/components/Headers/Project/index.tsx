@@ -16,7 +16,7 @@ const Project: React.FC = () => {
             <div>
               <img
                 style={{
-                  width: '30.85vw',
+                  width: '28vw',
                   height: '40vh',
                   marginLeft: '35px',
                 }}
@@ -24,9 +24,15 @@ const Project: React.FC = () => {
                 alt="Cabeleireiro e Barbeiro no Bairro"
               />
             </div>
-            <section>
+            <section
+              style={{
+                width: '28vw',
+                marginLeft: '18px',
+              }}
+            >
               <article>
                 <span>CABELEIREIRO E BARBEIRO NO BAIRRO</span>
+                <strong>17 outubro de 2020</strong>
               </article>
             </section>
           </li>
@@ -34,7 +40,7 @@ const Project: React.FC = () => {
             <div>
               <img
                 style={{
-                  width: '27.9vw',
+                  width: '28vw',
                   height: '40vh',
                   marginLeft: '0px',
                 }}
@@ -45,20 +51,21 @@ const Project: React.FC = () => {
             <section>
               <article>
                 <span>GABINETE DO BAIRRO</span>
+                <strong>17 outubro de 2020</strong>
               </article>
             </section>
           </li>
           <li
             style={{
-              width: '30.9vw',
+              width: '27vw',
               height: '40vh',
-              marginLeft: '-1px',
+              marginLeft: '0px',
             }}
           >
             <div>
               <img
                 style={{
-                  width: '30.9vw',
+                  width: '28vw',
                   height: '40vh',
                   marginLeft: '34px',
                 }}
@@ -68,13 +75,14 @@ const Project: React.FC = () => {
             </div>
             <section
               style={{
-                width: '30.9vw',
+                width: '28vw',
                 height: '40rem',
+                marginLeft: '18px',
               }}
             >
               <article>
                 <span>NOVO LAR</span>
-                <strong>NOVO LAR</strong>
+                <strong>17 outubro de 2020</strong>
                 <Link to="/">
                   <span> Projetos</span>
                 </Link>
@@ -87,7 +95,7 @@ const Project: React.FC = () => {
               <img
                 style={{
                   marginTop: '29px',
-                  width: '27vw',
+                  width: '28vw',
                   height: '45vh',
                   marginLeft: '0px',
                 }}
