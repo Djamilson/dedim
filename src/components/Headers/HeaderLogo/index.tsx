@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logoImg from '../../../assets/dedim.png';
+import logoImg from '../../../assets/dedim_barbeiro.png';
 import { Container, HeaderContainer } from './styles';
 
 const HeaderLogo: React.FC = () => {

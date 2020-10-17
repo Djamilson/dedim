@@ -28,7 +28,7 @@ export const ProjectContainer = styled.div`
     li {
       display: flex;
       flex-direction: column;
-      background: #fff;
+      background: none;
 
       div {
         width: 28vw;
@@ -70,9 +70,11 @@ export const ProjectContainer = styled.div`
           }
           strong {
             color: ${colors.colorTextInWhite};
-            font-size: 14px;
             margin-top: 6px;
             margin-bottom: 6px;
+            font-family: 'Poppins', sans-serif;
+            font: 300 0.9rem Poppins;
+            font-style: italic;
           }
 
           a {
