@@ -1,8 +1,5 @@
 import React from 'react';
 
-import backgroundImgGabinete from '../../../assets/download_.png';
-import backgroundImgIncubadora from '../../../assets/incubadora_.png';
-import backgroundImgNovolar from '../../../assets/novolar.png';
 import backgroundImgCabeleireiro from '../../../assets/sign-in-background.png';
 import { Container, HeaderContainer, HistoryAbout, About } from './styles';
 
