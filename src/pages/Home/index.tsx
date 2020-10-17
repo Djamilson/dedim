@@ -1,10 +1,5 @@
 import React from 'react';
 
-import giveClassesIcon from '../../assets/images/icons/give-classes.svg';
-import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
-import studyIcon from '../../assets/images/icons/study.svg';
-import landingImg from '../../assets/images/landing.svg';
-import logoImg from '../../assets/images/logo.svg';
 import Description from '../../components/Headers/Descritpion';
 import Header from '../../components/Headers/Header';
 import HeaderLogo from '../../components/Headers/HeaderLogo';

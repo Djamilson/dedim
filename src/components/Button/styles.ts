@@ -1,6 +1,8 @@
 import { shade } from 'polished';
 import styled from 'styled-components';
+
 import { colors } from '../../styles';
+
 export const Container = styled.button`
   background: ${colors.colorSecundary};
   border-radius: 7px;

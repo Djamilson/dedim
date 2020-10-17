@@ -1,10 +1,7 @@
-import React, { useMemo } from 'react';
-import { FiPower, FiLogIn } from 'react-icons/fi';
-import { MdShoppingBasket } from 'react-icons/md';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import backgroundImgGabinete from '../../../assets/download_.png';
-import logoImg from '../../../assets/images/logo.svg';
 import backgroundImgIncubadora from '../../../assets/incubadora_.png';
 import backgroundImgNovolar from '../../../assets/novolar.png';
 import backgroundImgCabeleireiro from '../../../assets/sign-in-background.png';

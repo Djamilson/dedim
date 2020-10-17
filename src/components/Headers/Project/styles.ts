@@ -1,6 +1,3 @@
-import { Link } from 'react-router-dom';
-
-import { shade } from 'polished';
 import styled from 'styled-components';
 
 import backgroundImg from '../../../assets/sign-in-background.png';
