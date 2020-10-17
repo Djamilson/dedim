@@ -226,8 +226,6 @@ export const HeaderContainer = styled.div`
   }
 `;
 
-export const HistoryAbout = styled.div``;
-export const ObjectGeral = styled.div``;
 export const About = styled.div`
   margin-top: -115px;
   width: 100%;

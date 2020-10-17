@@ -3,13 +3,7 @@ import { FiArrowRight } from 'react-icons/fi';
 
 import backgroundImgCabeleireiro from '../../assets/sign-in-background.png';
 import { colors } from '../../styles';
-import {
-  Container,
-  HeaderContainer,
-  AboutText,
-  HistoryAbout,
-  About,
-} from './styles';
+import { Container, HeaderContainer, AboutText, About } from './styles';
 
 const SectionCabBarbeiro: React.FC = () => {
   return (
