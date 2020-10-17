@@ -1,8 +1,7 @@
-import { shade } from 'polished';
 import styled from 'styled-components';
 
-import backgroundImg from '../../../assets/backgroundLogin.png';
-import { colors } from '../../../styles';
+import backgroundImg from '../../assets/backgroundLogin.png';
+import { colors } from '../../styles';
 
 export const Container = styled.div`
   position: relative;

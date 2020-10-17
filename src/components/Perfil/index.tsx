@@ -1,9 +1,9 @@
 import React from 'react';
 
-import backgroundImgCabeleireiro from '../../../assets/sign-in-background.png';
+import backgroundImgCabeleireiro from '../../assets/sign-in-background.png';
 import { Container, HeaderContainer, HistoryAbout, About } from './styles';
 
-const Section: React.FC = () => {
+const Perfil: React.FC = () => {
   return (
     <Container>
       <HeaderContainer>
@@ -15,12 +15,12 @@ const Section: React.FC = () => {
                 alt="Cabeleireiro e Barbeiro no Bairro"
               />
             </HistoryAbout>
-            <section>
+            <small>
               <article>
                 <span>CABELEIREIRO E BARBEIRO NO BAIRRO</span>
                 <strong>17 outubro de 2020</strong>
               </article>
-            </section>
+            </small>
           </li>
           <li>
             <div>
@@ -52,4 +52,4 @@ const Section: React.FC = () => {
   );
 };
 
-export default Section;
+export default Perfil;

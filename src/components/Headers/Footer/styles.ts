@@ -6,7 +6,7 @@ export const Container = styled.div`
   position: relative;
   max-width: 100vw;
   height: 100vh;
-  top: 10rem;
+  top: 40rem;
   border: 0;
 
   background: ${colors.colorPrimary};

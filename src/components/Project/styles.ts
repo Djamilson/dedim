@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import backgroundImg from '../../../assets/sign-in-background.png';
-import { colors } from '../../../styles';
+import backgroundImg from '../../assets/sign-in-background.png';
+import { colors } from '../../styles';
 
 export const Container = styled.div`
   max-width: 100vw;

@@ -1,12 +1,15 @@
 import React from 'react';
 
-import Description from '../../components/Headers/Descritpion';
 import Footer from '../../components/Headers/Footer';
 import Header from '../../components/Headers/Header';
 import HeaderLogo from '../../components/Headers/HeaderLogo';
 import Menu from '../../components/Headers/Menu';
-import Project from '../../components/Headers/Project';
-import SectionCabBarbeiro from '../../components/Headers/SectionCabBarbeiro';
+import Perfil from '../../components/Perfil';
+import Project from '../../components/Project';
+import SectionCabBarbeiro from '../../components/SectionCabBarbeiro';
+import SectionGabinente from '../../components/SectionGabinente';
+import SectionProjectoIncubadora from '../../components/SectionProjectoIncubadora';
+import SectionProjectoNewLar from '../../components/SectionProjectoNewLar';
 import { Container } from './styles';
 
 const Home: React.FC = () => {
@@ -16,8 +19,12 @@ const Home: React.FC = () => {
       <HeaderLogo />
       <Menu />
       <Project />
-      <Description />
+      <Perfil />
       <SectionCabBarbeiro />
+      <SectionProjectoNewLar />
+      <SectionProjectoIncubadora />
+      <SectionGabinente />
+
       <Footer />
     </Container>
   );
