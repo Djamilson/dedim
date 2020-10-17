@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import backgroundImgGabinete from '../../../assets/download_.png';
-import backgroundImgIncubadora from '../../../assets/incubadora_.png';
-import backgroundImgNovolar from '../../../assets/novolar.png';
-import backgroundImgCabeleireiro from '../../../assets/sign-in-background.png';
+import backgroundImgGabinete from '../../assets/download_.png';
+import backgroundImgIncubadora from '../../assets/incubadora_.png';
+import backgroundImgNovolar from '../../assets/novolar.png';
+import backgroundImgCabeleireiro from '../../assets/sign-in-background.png';
 import { Container, ProjectContainer } from './styles';
 
 const Project: React.FC = () => {

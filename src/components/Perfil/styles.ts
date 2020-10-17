@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import backgroundImg from '../../../assets/backgroundLogin.png';
-import { colors } from '../../../styles';
+import backgroundImg from '../../assets/backgroundLogin.png';
+import { colors } from '../../styles';
 
 export const Container = styled.div`
   position: relative;
@@ -38,6 +38,46 @@ export const HeaderContainer = styled.div`
     li {
       display: flex;
       flex-direction: column;
+
+      small {
+        width: 100%;
+        height: 20vh;
+        background: #fff;
+
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+        article {
+          width: 100%;
+          height: 20vh;
+          background: #fff;
+
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+
+          padding: 30px;
+          span {
+            font-size: 18px;
+            color: ${colors.colorTextTitle};
+            text-align: center;
+          }
+          p {
+            width: 100%;
+            border: 0;
+            text-align: justify;
+            color: ${colors.colorTextBase};
+            margin-top: 10px;
+            margin-bottom: 6px;
+            font-family: 'Poppins', sans-serif;
+            font: 300 0.9rem Poppins;
+            font-style: normal;
+          }
+        }
+      }
 
       section {
         width: 100%;

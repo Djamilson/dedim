@@ -1,9 +1,9 @@
 import React from 'react';
 
-import backgroundImgCabeleireiro from '../../../assets/sign-in-background.png';
+import backgroundImgCabeleireiro from '../../assets/sign-in-background.png';
 import { Container, HeaderContainer, HistoryAbout, About } from './styles';
 
-const Description: React.FC = () => {
+const Section: React.FC = () => {
   return (
     <Container>
       <HeaderContainer>
@@ -52,4 +52,4 @@ const Description: React.FC = () => {
   );
 };
 
-export default Description;
+export default Section;
