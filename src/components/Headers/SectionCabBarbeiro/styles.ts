@@ -1,4 +1,3 @@
-import { shade } from 'polished';
 import styled from 'styled-components';
 
 import backgroundImg from '../../../assets/backgroundLogin.png';
