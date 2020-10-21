@@ -14,9 +14,6 @@ const Header: React.FC = () => {
         <Link to="/">
           <FiTwitter size={26} color="#FFF" />
         </Link>
-        <Link to="/">
-          <FiTwitter size={26} color="#FFF" />
-        </Link>
       </HeaderContainer>
     </Container>
   );
