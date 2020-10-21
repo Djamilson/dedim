@@ -7,110 +7,45 @@ import backgroundImgNovolar from '../../assets/novolar.png';
 import backgroundImgCabeleireiro from '../../assets/sign-in-background.png';
 import { Container, ProjectContainer } from './styles';
 
+import {} from 'framer-motion';
+
 const Project: React.FC = () => {
   return (
     <Container>
       <ProjectContainer>
         <ul>
           <li>
-            <div>
-              <img
-                style={{
-                  width: '28vw',
-                  height: '40vh',
-                  marginLeft: '35px',
-                }}
-                src={backgroundImgCabeleireiro}
-                alt="Cabeleireiro e Barbeiro no Bairro"
-              />
-            </div>
-            <section
-              style={{
-                width: '28vw',
-                marginLeft: '18px',
-              }}
-            >
-              <article>
-                <span>CABELEIREIRO E BARBEIRO NO BAIRRO</span>
-                <strong>17 outubro de 2020</strong>
-              </article>
-            </section>
-          </li>
-          <li>
-            <div>
-              <img
-                style={{
-                  width: '28vw',
-                  height: '40vh',
-                  marginLeft: '0px',
-                }}
-                src={backgroundImgGabinete}
-                alt="Gabinete do Bairro"
-              />
-            </div>
+            <img
+              src={backgroundImgCabeleireiro}
+              alt="Cabeleireiro e Barbeiro no Bairro"
+            />
             <section>
-              <article>
-                <span>GABINETE DO BAIRRO</span>
-                <strong>17 outubro de 2020</strong>
-              </article>
-            </section>
-          </li>
-          <li
-            style={{
-              width: '27vw',
-              height: '40vh',
-              marginLeft: '0px',
-            }}
-          >
-            <div>
-              <img
-                style={{
-                  width: '28vw',
-                  height: '40vh',
-                  marginLeft: '34px',
-                }}
-                src={backgroundImgNovolar}
-                alt="Novo Lar"
-              />
-            </div>
-            <section
-              style={{
-                width: '28vw',
-                height: '40rem',
-                marginLeft: '18px',
-              }}
-            >
-              <article>
-                <span>NOVO LAR</span>
-                <strong>17 outubro de 2020</strong>
-                <Link to="/">
-                  <span> Projetos</span>
-                </Link>
-              </article>
+              <span>CABELEIREIRO E BARBEIRO NO BAIRRO</span>
+              <strong>17 outubro de 2020</strong>
             </section>
           </li>
 
           <li>
-            <div>
-              <img
-                style={{
-                  marginTop: '29px',
-                  width: '28vw',
-                  height: '45vh',
-                  marginLeft: '0px',
-                }}
-                src={backgroundImgIncubadora}
-                alt="INCUBADORA DE EMPREGOS"
-              />
-            </div>
+            <img src={backgroundImgGabinete} alt="Gabinete do Bairro" />
             <section>
-              <article>
-                <span>INCUBADORA DE EMPREGOS</span>
-                <strong>INCUBADORA DE EMPREGOS</strong>
-                <Link to="/">
-                  <span> Projetos</span>
-                </Link>
-              </article>
+              <span>GABINETE DO BAIRRO</span>
+              <strong>17 outubro de 2020</strong>
+            </section>
+          </li>
+
+          <li>
+            <img src={backgroundImgNovolar} alt="Novo Lar" />
+            <section>
+              <span>NOVO LAR</span>
+              <strong>17 outubro de 2020</strong>
+            </section>
+          </li>
+
+          <li>
+            <img src={backgroundImgIncubadora} alt="INCUBADORA DE EMPREGOS" />
+            <section>
+              <span>INCUBADORA DE EMPREGOS</span>
+              <strong>INCUBADORA DE EMPREGOS</strong>
             </section>
           </li>
         </ul>

@@ -4,10 +4,8 @@ import { colors } from '../../styles';
 
 export const Container = styled.div`
   position: relative;
-  height: 100vh;
+  height: 100%;
 
-  margin-top: 100px;
-  background: none;
   border: 0;
 
   padding: 10px;
@@ -18,13 +16,16 @@ export const Container = styled.div`
 
   border: none;
   background: ${colors.colorPrimary};
+
+  margin-top: 80%;
 `;
 
 export const HeaderContainer = styled.div`
   justify-content: center;
   margin-left: 17px;
   border: none;
-  margin-top: 5rem;
+  margin-top: 10%;
+
   ul {
     margin-top: 7rem;
     border: 0;

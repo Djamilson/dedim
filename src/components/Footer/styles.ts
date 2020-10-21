@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 
-import { colors } from '../../../styles';
+import { colors } from '../../styles';
 
 export const Container = styled.div`
   position: relative;
   max-width: 100vw;
-  height: 100vh;
-  top: 40rem;
+  height: 30vh;
+  top: 40%;
   border: 0;
 
   background: ${colors.colorPrimary};
+  margin-top: 130%;
 `;
 
 export const FooterContainer = styled.footer`

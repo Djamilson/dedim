@@ -5,8 +5,8 @@ import { colors } from '../../styles';
 
 export const Container = styled.div`
   max-width: 100vw;
-  height: 100vh;
-  top: 0rem;
+  height: 100%;
+  top: 0;
   border: 0;
 
   flex: 1;
@@ -16,9 +16,7 @@ export const Container = styled.div`
 
 export const ProjectContainer = styled.div`
   ul {
-    margin-top: 20px;
     border: 0;
-
     padding: 0 16rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -30,21 +28,13 @@ export const ProjectContainer = styled.div`
       flex-direction: column;
       background: none;
 
-      div {
-        width: 28vw;
+      margin-top: 15%;
+
+      img {
+        width: 100%;
         height: 40vh;
-        background: none;
-        background-size: cover;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-          width: 26.8vw;
-          height: 40vh;
-        }
       }
+
       section {
         width: 100%;
         height: 25vh;
@@ -54,41 +44,18 @@ export const ProjectContainer = styled.div`
         justify-content: center;
         display: flex;
         flex-direction: column;
-        article {
-          width: 100%;
-          height: 25vh;
-          background: #fff;
-
-          align-items: center;
-          justify-content: center;
-          display: flex;
-          flex-direction: column;
-          span {
-            font-size: 18px;
-            color: ${colors.colorTextTitle};
-            text-align: center;
-          }
-          strong {
-            color: ${colors.colorTextInWhite};
-            margin-top: 6px;
-            margin-bottom: 6px;
-            font-family: 'Poppins', sans-serif;
-            font: 300 0.9rem Poppins;
-            font-style: italic;
-          }
-
-          a {
-            text-decoration: none;
-            color: ${colors.colorTextInPrimary};
-
-            span {
-              font-size: 17px;
-            }
-
-            &:hover {
-              color: #000;
-            }
-          }
+        span {
+          font-size: 18px;
+          color: ${colors.colorTextTitle};
+          text-align: center;
+        }
+        strong {
+          color: ${colors.colorTextInWhite};
+          margin-top: 6px;
+          margin-bottom: 6px;
+          font-family: 'Poppins', sans-serif;
+          font: 300 0.9rem Poppins;
+          font-style: italic;
         }
       }
     }
