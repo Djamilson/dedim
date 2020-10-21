@@ -4,11 +4,7 @@ import { colors } from '../../styles';
 
 export const Container = styled.div`
   position: relative;
-  height: 100vh;
-
-  margin-top: 700px;
-  background: none;
-  border: 0;
+  height: 100%;
 
   padding: 10px;
   justify-content: center;
@@ -18,6 +14,8 @@ export const Container = styled.div`
 
   border: none;
   background: ${colors.colorPrimary};
+
+  margin-top: 160%;
 `;
 
 export const HeaderContainer = styled.div`

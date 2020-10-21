@@ -5,9 +5,9 @@ import { colors } from '../../styles';
 
 export const Container = styled.div`
   position: relative;
-  height: 100vh;
+  height: 100%;
 
-  margin-top: 20rem;
+  margin-top: 70%;
   background: none;
   border: 0;
 

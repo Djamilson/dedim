@@ -3,12 +3,7 @@ import styled from 'styled-components';
 import { colors } from '../../styles';
 
 export const Container = styled.div`
-  position: relative;
-  height: 100vh;
-
-  margin-top: 1200px;
-  background: none;
-  border: 0;
+  height: 100%;
 
   padding: 10px;
   justify-content: center;
@@ -18,6 +13,8 @@ export const Container = styled.div`
 
   border: none;
   background: ${colors.colorPrimary};
+
+  margin-top: 340%;
 `;
 
 export const HeaderContainer = styled.div`

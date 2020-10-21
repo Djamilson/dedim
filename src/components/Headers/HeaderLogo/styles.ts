@@ -5,8 +5,6 @@ import { colors } from '../../../styles';
 export const Container = styled.div`
   width: 100vw;
   height: 40vh;
-
-  border-bottom: ${colors.colorTextInPrimary} solid 1px;
 `;
 
 export const HeaderContainer = styled.div`
@@ -18,6 +16,8 @@ export const HeaderContainer = styled.div`
   background: ${colors.colorPrimary};
   margin-top: 0rem;
   flex-direction: column;
+
+  border-bottom: ${colors.colorTextInPrimary} solid 1px;
 
   > img {
     height: 3rem;
