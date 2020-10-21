@@ -7,7 +7,7 @@ export const Container = styled.div`
   position: relative;
   height: 100vh;
 
-  margin-top: 20rem;
+  margin-top: 200px;
   background: none;
   border: 0;
 

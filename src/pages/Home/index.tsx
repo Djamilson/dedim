@@ -7,7 +7,7 @@ import Menu from '../../components/Headers/Menu';
 import Perfil from '../../components/Perfil';
 import Project from '../../components/Project';
 import SectionCabBarbeiro from '../../components/SectionCabBarbeiro';
-import SectionGabinente from '../../components/SectionGabinente';
+import SectionGabinete from '../../components/SectionGainete';
 import SectionProjectoIncubadora from '../../components/SectionProjectoIncubadora';
 import SectionProjectoNewLar from '../../components/SectionProjectoNewLar';
 import { Container } from './styles';
@@ -21,9 +21,9 @@ const Home: React.FC = () => {
       <Project />
       <Perfil />
       <SectionCabBarbeiro />
-      <SectionProjectoNewLar />
+      <SectionGabinete />
       <SectionProjectoIncubadora />
-      <SectionGabinente />
+      <SectionProjectoNewLar />
 
       <Footer />
     </Container>

@@ -6,7 +6,7 @@ export const Container = styled.div`
   position: relative;
   height: 100vh;
 
-  margin-top: 10rem;
+  margin-top: 1200px;
   background: none;
   border: 0;
 
@@ -14,8 +14,10 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   display: flex;
+  margin-bottom: 100px;
 
   border: none;
+  background: ${colors.colorPrimary};
 `;
 
 export const HeaderContainer = styled.div`
@@ -37,77 +39,41 @@ export const HeaderContainer = styled.div`
     li {
       display: flex;
       flex-direction: column;
+      padding-top: 700px;
 
       section {
-        width: 100%;
-        height: 125vh;
         background: #fff;
-        border: 0;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        margin-top: -7.2rem;
+        padding-left: 40px;
 
-        padding: 40px 30px 20px 30px;
-        border: 0;
-
-        > span {
-          position: absolute;
-          top: 3rem;
-          height: 20vh;
-          border: 0;
-          background: #fff;
-          margin-top: 0rem;
-          align-items: center;
-          justify-content: center;
-          display: flex;
-          flex-direction: column;
-
-          padding: 30px;
-          span {
-            font-size: 18px;
-            color: ${colors.colorTextTitle};
-            text-align: center;
-
-            margin-top: 3rem;
-          }
-
-          p {
-            width: 100%;
-            height: 100vh;
-            border: 0;
-            text-align: justify;
-            color: ${colors.colorTextBase};
-            margin-top: 0px;
-            margin-bottom: 6px;
-            font-family: 'Poppins', sans-serif;
-            font: 300 0.9rem Poppins;
-            font-style: normal;
-          }
+        padding-top: 60px;
+        strong {
+          margin-top: 0px;
+          font-size: 18px;
+          color: ${colors.colorTextTitle};
+          text-align: center;
+          margin-left: 100px;
         }
-        div {
-          position: absolute;
-          border: 0;
-          margin-top: 20rem;
-          padding: 10px 20px;
-          width: 50vw;
-          > h2 {
-            border: 0;
 
+        div {
+          margin-top: 30px;
+          margin-right: 30px;
+
+          border: none;
+          h2 {
+            border: 0;
             font-weight: bolder;
             color: ${colors.colorTextBase};
             font-size: 17px;
             margin-left: 0px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
           }
-          > p {
+
+          p {
             width: 100%;
-            height: 100vh;
             border: 0;
             text-align: justify;
             color: ${colors.colorTextBase};
-            margin-top: 0px;
+
             margin-bottom: 0px;
             font-family: 'Poppins', sans-serif;
             font: 300 1rem Poppins;
@@ -116,120 +82,50 @@ export const HeaderContainer = styled.div`
         }
 
         aside {
-          position: absolute;
-          border: 0;
-          margin-top: 35rem;
-          padding: 10px 0px;
-
-          background: none;
-          width: 50%;
-          height: 100vh;
-          border: 0;
-
-          span {
-            h2 {
-              border: 0;
-              font-weight: bolder;
-              color: ${colors.colorTextBase};
-              font-size: 17px;
-              margin-left: 20px;
-              margin-bottom: 0px;
-            }
-            article {
-              align-items: center;
-              justify-content: center;
-              display: flex;
-              flex-direction: row;
-              padding: 10px 2rem;
-              svg {
-                margin-top: 10px;
-                margin-right: 30px;
-              }
-              p {
-                width: 90%;
-                height: 1vh;
-                border: 0;
-                text-align: justify;
-                color: ${colors.colorTextBase};
-                margin-top: 0px;
-                margin-bottom: 0px;
-                font-family: 'Poppins', sans-serif;
-                font: 300 1rem Poppins;
-                font-style: normal;
-              }
-            }
-
-            div {
-              position: absolute;
-              align-items: center;
-              justify-content: center;
-              display: flex;
-              flex-direction: row;
-              padding: 10px 2rem;
-              margin-top: -10px;
-              svg {
-                margin-top: 10px;
-                margin-right: 30px;
-              }
-              p {
-                width: 90%;
-                height: 1vh;
-                border: 0;
-                text-align: justify;
-                color: ${colors.colorTextBase};
-                margin-top: 0px;
-                margin-bottom: 0px;
-                font-family: 'Poppins', sans-serif;
-                font: 300 1rem Poppins;
-                font-style: normal;
-              }
-            }
-          }
-        }
-
-        > article {
-          width: 100%;
-          height: 10vh;
-
-          border: 0;
-          align-items: flex-start;
-          justify-content: flex-start;
-          display: flex;
-          flex-direction: column;
-          margin-top: 32rem;
-
-          position: relative;
-          > h2 {
+          padding-top: 40px;
+          h2 {
             border: 0;
             font-weight: bolder;
             color: ${colors.colorTextBase};
             font-size: 17px;
             margin-left: 0px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
           }
+          article {
+            margin-top: 20px;
 
-          p {
-            width: 100%;
-            height: 100vh;
-            border: 0;
-            text-align: justify;
-            color: ${colors.colorTextBase};
-            margin-top: 0px;
-            margin-bottom: 6px;
-            font-family: 'Poppins', sans-serif;
-            font: 300 1rem Poppins;
-            font-style: normal;
+            p {
+              margin-top: -25px;
+              margin-left: 35px;
+              width: 90%;
+              border: 0;
+              text-align: justify;
+              color: ${colors.colorTextBase};
+
+              font-family: 'Poppins', sans-serif;
+              font: 300 1rem Poppins;
+              font-style: normal;
+            }
           }
+          article + article {
+            margin-top: 30px;
+          }
+        }
+
+        aside + div {
+          margin-top: 60px;
+        }
+
+        div {
+          padding-bottom: 30px;
         }
       }
     }
   }
 `;
 
-export const HistoryAbout = styled.div``;
-export const ObjectGeral = styled.div``;
 export const About = styled.div`
-  margin-top: -115px;
+  margin-top: 0px;
   width: 100%;
   background: ${colors.colorBoxFooter};
   padding: 0 40px;

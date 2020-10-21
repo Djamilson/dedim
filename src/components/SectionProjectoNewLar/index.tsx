@@ -5,59 +5,77 @@ import backgroundImgnovolar from '../../assets/novolar.png';
 import { colors } from '../../styles';
 import { Container, HeaderContainer, AboutText, About } from './styles';
 
-const SectionProjectoNewLar: React.FC = () => {
+const SectionProjectoIncubadora: React.FC = () => {
   return (
     <Container>
       <HeaderContainer>
         <ul>
           <li>
             <section>
-              <span>
-                <span>PROJETO NOVO LAR</span>
-                <strong>17 outubro de 2020</strong>
-              </span>
+              <strong>PROJETO NOVO LAR</strong>
 
               <div>
                 <h2>Objetivo Geral do projeto</h2>
-                <p>Auxiliar no transporte de sua mudança.</p>
+                <p>Auxiliar no transporte de sua MUDANÇA.</p>
               </div>
 
               <aside>
-                <span>
-                  <h2>Objetivos Específico</h2>
-                  <article>
-                    <FiArrowRight size={26} color={colors.colorTextBase} />
-                    <p>
-                      Auxiliar no transporte de móveis e eletrodomésticospara
-                      pessoas que necessitam de fazer MUDANÇA para um novo lar.
-                    </p>
-                  </article>
-                  <div>
-                    <FiArrowRight size={26} color={colors.colorTextBase} />
-                    <p>
-                      Arcar com os custos de mudança (caminhão) para o cidadão.
-                    </p>
-                  </div>
-                </span>
+                <h2>Objetivos Específico</h2>
+                <article>
+                  <FiArrowRight size={26} color={colors.colorTextBase} />
+                  <p>
+                    Auxiliar no transporte de móveis e eletrodomésticospara
+                    pessoas que necessitam de fazer MUDANÇA para um novo lar;
+                  </p>
+                </article>
+                <article>
+                  <FiArrowRight size={26} color={colors.colorTextBase} />
+                  <p>
+                    Arcar com os custos de mudança (caminhão) para o cidadão.
+                  </p>
+                </article>
               </aside>
 
-              <article>
-                <h2>Quem pretende atingir?</h2>
+              <div>
+                <h2>Quem pretende atingir</h2>
                 <p>
                   Pessoas que necessitam de auxílio para a realização de mudança
                   que não tenham condições de realizar o pagamento do transporte
                   (caminhão). Inicialmente serão as pessoas que possuem
                   cadastros nos benefícios do governo federal.
                 </p>
-              </article>
+              </div>
 
-              <section>
+              <div>
                 <h2>Como pretende realizar o projeto</h2>
                 <p>
                   Serão realizados a disponibilidade de caminhão de acordo com
-                  cadastros dos interessados no Escritório do projeto
+                  cadastros dos interessados no Escritório do projeto.
                 </p>
-              </section>
+              </div>
+
+              <div>
+                <h2>Como conseguir os caminhões</h2>
+                <p>
+                  Os caminhões para a realização das MUDANÇAS, inicialmente
+                  cadastrados com motoristas que residem na região para
+                  atendimento do projeto.
+                </p>
+              </div>
+
+              <div>
+                <h2>Onde funcionar</h2>
+                <p>Escritório na Região</p>
+              </div>
+
+              <div>
+                <h2>De onde vem o recurso?</h2>
+                <p>
+                  O recurso para custear as despesas com o escritório e o
+                  pagamento dos caminhões serão adquiridos por meio de emendas
+                  parlamentar.
+                </p>
+              </div>
             </section>
           </li>
           <li>
@@ -65,13 +83,16 @@ const SectionProjectoNewLar: React.FC = () => {
               <fieldset>
                 <legend>Sobre</legend>
                 <div>
-                  <img src={backgroundImgnovolar} alt="PROJETO NOVO LAR" />
+                  <img
+                    src={backgroundImgnovolar}
+                    alt="Cabeleireiro e Barbeiro no Bairro"
+                  />
                 </div>
               </fieldset>
             </About>
             <AboutText>
               <span>Minha informações</span>
-              <p>PROJETO NOVO LAR</p>
+              <p>Cabeleireiro e Barbeiro no Bairro</p>
             </AboutText>
           </li>
         </ul>
@@ -80,4 +101,4 @@ const SectionProjectoNewLar: React.FC = () => {
   );
 };
 
-export default SectionProjectoNewLar;
+export default SectionProjectoIncubadora;
