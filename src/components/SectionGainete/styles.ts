@@ -6,7 +6,7 @@ export const Container = styled.div`
   position: relative;
   height: 100vh;
 
-  margin-top: 100px;
+  margin-top: 700px;
   background: none;
   border: 0;
 
@@ -39,7 +39,7 @@ export const HeaderContainer = styled.div`
     li {
       display: flex;
       flex-direction: column;
-      padding-top: 700px;
+      padding-top: 600px;
 
       section {
         background: #fff;
