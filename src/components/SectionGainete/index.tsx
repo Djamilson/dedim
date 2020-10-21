@@ -1,7 +1,7 @@
 import React from 'react';
 import { FiArrowRight } from 'react-icons/fi';
 
-import backgroundImgCabeleireiro from '../../assets/sign-in-background.png';
+import backgroundImgGabinete from '../../assets/gabinete.png';
 import { colors } from '../../styles';
 import { Container, HeaderContainer, AboutText, About } from './styles';
 
@@ -73,7 +73,7 @@ const SectionGabinete: React.FC = () => {
                 <legend>Sobre</legend>
                 <div>
                   <img
-                    src={backgroundImgCabeleireiro}
+                    src={backgroundImgGabinete}
                     alt="Cabeleireiro e Barbeiro no Bairro"
                   />
                 </div>
