@@ -6,23 +6,6 @@ import { useViewportScroll } from 'framer-motion';
 import { Container, MenuContainer } from './styles';
 
 const Menu: React.FC = () => {
-  const { scrollY } = useViewportScroll();
-
-  const [s, setS] = useState(0);
-  const [ss, setSs] = useState(s);
-
-  function onClick() {
-    alert('click');
-    console.log('mmm', window.pageYOffset);
-    setS(s + 150);
-
-    console.log('scroll::', scrollY);
-  }
-
-  useEffect(() => {
-    setSs(s);
-  }, [s]);
-
   return (
     <Container>
       <MenuContainer>
@@ -31,7 +14,6 @@ const Menu: React.FC = () => {
             <Link to="/">
               <span>Início</span>
             </Link>
-            <button type="button">pp</button>
           </li>
           <li>
             <Link to="/">
