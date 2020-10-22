@@ -1,14 +1,15 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 
-import { motion } from 'framer-motion';
+import { useViewportScroll } from 'framer-motion';
 
 import { Container, MenuContainer } from './styles';
 
 const Menu: React.FC = () => {
   const scrollPosition = window.pageYOffset;
+  const { scrollY } = useViewportScroll();
 
-  // If back to element (use Ref)
+
   const [s, setS] = useState(0);
   const [ss, setSs] = useState(s);
 
@@ -16,6 +17,8 @@ const Menu: React.FC = () => {
     alert('click');
     console.log('mmm', window.pageYOffset);
     setS(s + 150);
+
+    console.log('scroll::', scrollY);
   }
 
   useEffect(() => {
@@ -30,6 +33,7 @@ const Menu: React.FC = () => {
             <Link to="/">
               <span>Início</span>
             </Link>
+            <button type="button">pp</button>
           </li>
           <li>
             <Link to="/">
