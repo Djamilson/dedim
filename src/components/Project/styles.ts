@@ -23,6 +23,18 @@ export const ProjectContainer = styled.div`
     grid-gap: 20px;
     list-style: none;
 
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 0 8rem;
+      margin-left: 40px;
+    }
+
+    @media (max-width: 500px) {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 0 8rem;
+      margin-left: 40px;
+    }
+
     li {
       display: flex;
       flex-direction: column;

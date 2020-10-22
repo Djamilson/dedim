@@ -15,6 +15,10 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   display: flex;
+
+  @media (max-width: 600px) {
+    margin-top: 150%;
+  }
 `;
 
 export const HeaderContainer = styled.div`
@@ -34,6 +38,10 @@ export const HeaderContainer = styled.div`
     flex: 1;
     background: url(${backgroundImg}) no-repeat center;
     background-size: cover;
+
+    @media (max-width: 600px) {
+      grid-template-columns: 40rem;
+    }
 
     li {
       display: flex;

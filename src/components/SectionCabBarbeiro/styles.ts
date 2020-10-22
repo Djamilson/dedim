@@ -18,6 +18,9 @@ export const Container = styled.div`
   background: ${colors.colorPrimary};
 
   margin-top: 80%;
+  @media (max-width: 600px) {
+    margin-top: 580%;
+  }
 `;
 
 export const HeaderContainer = styled.div`
@@ -25,6 +28,10 @@ export const HeaderContainer = styled.div`
   margin-left: 17px;
   border: none;
   margin-top: 10%;
+
+  @media (max-width: 600px) {
+    margin-top: 110%;
+  }
 
   ul {
     margin-top: 7rem;
@@ -36,6 +43,10 @@ export const HeaderContainer = styled.div`
     list-style: none;
 
     background: none;
+
+    @media (max-width: 600px) {
+      grid-template-columns: 40rem;
+    }
 
     li {
       display: flex;
