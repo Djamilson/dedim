@@ -9,7 +9,7 @@ const Menu: React.FC = () => {
   const scrollPosition = window.pageYOffset;
   const { scrollY } = useViewportScroll();
 
-  // If back to element (use Ref)
+
   const [s, setS] = useState(0);
   const [ss, setSs] = useState(s);
 
