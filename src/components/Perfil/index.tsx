@@ -1,6 +1,7 @@
 import React from 'react';
 
-import backgroundImgCabeleireiro from '../../assets/sign-in-background.png';
+import backgroundImgCabeleireiro from '../../assets/33101.jpg';
+import imgProfile from '../../assets/profile.jpg';
 import { Container, HeaderContainer, HistoryAbout, About } from './styles';
 
 const Perfil: React.FC = () => {
@@ -17,8 +18,11 @@ const Perfil: React.FC = () => {
             </HistoryAbout>
             <small>
               <article>
-                <span>CABELEIREIRO E BARBEIRO NO BAIRRO</span>
-                <strong>17 outubro de 2020</strong>
+                <span>Crescimento e oportunidade</span>
+                <div>
+                  <strong>se faz com </strong>
+                  <span>Gente de Verdade</span>
+                </div>
               </article>
             </small>
           </li>
@@ -29,7 +33,7 @@ const Perfil: React.FC = () => {
                   <legend>Sobre</legend>
                   <div>
                     <img
-                      src={backgroundImgCabeleireiro}
+                      src={imgProfile}
                       alt="Cabeleireiro e Barbeiro no Bairro"
                     />
                   </div>

@@ -73,6 +73,14 @@ export const HeaderContainer = styled.div`
             color: ${colors.colorTextTitle};
             text-align: center;
           }
+          strong {
+            color: ${colors.colorTextInWhite};
+            margin-top: 6px;
+            margin-bottom: 6px;
+            font-family: 'Poppins', sans-serif;
+            font: 300 0.9rem Poppins;
+            font-style: italic;
+          }
           p {
             width: 100%;
             border: 0;

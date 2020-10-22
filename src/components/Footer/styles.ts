@@ -14,6 +14,15 @@ export const Container = styled.div`
 `;
 
 export const FooterContainer = styled.footer`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
   ul {
     display: flex;
     flex-direction: row;

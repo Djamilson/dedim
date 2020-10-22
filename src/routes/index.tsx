@@ -1,14 +1,15 @@
 import React from 'react';
 import { Switch } from 'react-router-dom';
 
-import Route from './Route';
+// import Home from '../components/ScrollIndicatorPage';
 
 import Home from '../pages/Home';
+import Route from './Route';
 
 const Routes: React.FC = () => (
   <Switch>
     <Route path="/" exact component={Home} />
-   </Switch>
+  </Switch>
 );
 
 export default Routes;

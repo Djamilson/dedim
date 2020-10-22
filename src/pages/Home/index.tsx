@@ -6,6 +6,8 @@ import HeaderLogo from '../../components/Headers/HeaderLogo';
 import Menu from '../../components/Headers/Menu';
 import Perfil from '../../components/Perfil';
 import Project from '../../components/Project';
+import ScrollIndicator from '../../components/ScrollIndicator';
+import ScrollToTop from '../../components/ScrollToTop';
 import SectionCabBarbeiro from '../../components/SectionCabBarbeiro';
 import SectionGabinete from '../../components/SectionGainete';
 import SectionProjectoIncubadora from '../../components/SectionProjectoIncubadora';
@@ -15,6 +17,9 @@ import { Container, Section, Sticky } from './styles';
 const Home: React.FC = () => {
   return (
     <Container>
+      <ScrollIndicator />
+      <ScrollToTop />
+
       <Section
         style={{
           height: '20%',
@@ -52,6 +57,7 @@ const Home: React.FC = () => {
           <SectionProjectoNewLar />
         </Sticky>
       </Section>
+
       <Footer />
     </Container>
   );

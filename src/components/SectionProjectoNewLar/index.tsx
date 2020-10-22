@@ -12,7 +12,7 @@ const SectionProjectoIncubadora: React.FC = () => {
         <ul>
           <li>
             <section>
-              <strong>PROJETO NOVO LAR</strong>
+              <strong>NOVO LAR</strong>
 
               <div>
                 <h2>Objetivo Geral do projeto</h2>
@@ -91,8 +91,8 @@ const SectionProjectoIncubadora: React.FC = () => {
               </fieldset>
             </About>
             <AboutText>
-              <span>Minha informações</span>
-              <p>Cabeleireiro e Barbeiro no Bairro</p>
+              <span>Informações</span>
+              <strong>Projeto novo lar</strong>
             </AboutText>
           </li>
         </ul>
