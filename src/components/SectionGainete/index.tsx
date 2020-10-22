@@ -80,8 +80,8 @@ const SectionGabinete: React.FC = () => {
               </fieldset>
             </About>
             <AboutText>
-              <span>Minha informações</span>
-              <p>Cabeleireiro e Barbeiro no Bairro</p>
+              <span>Informações</span>
+              <strong>Gabinete do Bairro</strong>
             </AboutText>
           </li>
         </ul>

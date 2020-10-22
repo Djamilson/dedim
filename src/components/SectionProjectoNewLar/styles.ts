@@ -48,7 +48,7 @@ export const HeaderContainer = styled.div`
           font-size: 18px;
           color: ${colors.colorTextTitle};
           text-align: center;
-          margin-left: 100px;
+          margin-left: 200px;
         }
 
         div {
@@ -165,7 +165,12 @@ export const AboutText = styled.article`
   height: 25vh;
 
   background: ${colors.colorBoxBase};
-  padding: 30px 50px;
+  padding: 30px 0px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 
   span {
     font-size: 18px;
@@ -173,14 +178,11 @@ export const AboutText = styled.article`
     text-align: center;
     margin-bottom: 10px;
   }
-  > p {
-    width: 100%;
-    height: 100vh;
+  strong {
     border: 0;
     text-align: justify;
     color: ${colors.colorTextBase};
-    margin-top: 0px;
-    margin-bottom: 0px;
+
     font-family: 'Poppins', sans-serif;
     font: 300 1rem Poppins;
     font-style: italic;

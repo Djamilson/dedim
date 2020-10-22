@@ -27,10 +27,11 @@ export const MenuContainer = styled.div`
       list-style: none;
       font-size: 14px;
 
-      a {
+      button {
         text-decoration: none;
         color: ${colors.colorTextInPrimary};
-
+        background: none;
+        border: none;
         span {
           font-size: 17px;
         }
