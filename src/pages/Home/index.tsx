@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import Footer from '../../components/Footer';
 import Header from '../../components/Headers/Header';
@@ -13,22 +13,6 @@ import SectionProjectoNewLar from '../../components/SectionProjectoNewLar';
 import { Container, Section, Sticky } from './styles';
 
 const Home: React.FC = () => {
-  const scrollPosition = window.pageYOffset;
-
-  // If back to element (use Ref)
-  const [s, setS] = useState(0);
-  const [ss, setSs] = useState(s);
-
-  function onClick() {
-    alert('click');
-    console.log('mmm', window.pageYOffset);
-    setS(s + 150);
-  }
-
-  useEffect(() => {
-    setSs(s);
-  }, [s]);
-
   return (
     <Container>
       <Section
