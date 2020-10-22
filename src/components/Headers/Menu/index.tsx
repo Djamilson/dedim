@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-
-import { useViewportScroll } from 'framer-motion';
 
 import { Container, MenuContainer } from './styles';
 
