@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { motion } from 'framer-motion';
-
 import logoImg from '../../../assets/dedim_barbeiro.png';
 import { Container, HeaderContainer } from './styles';
 
