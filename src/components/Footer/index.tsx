@@ -10,17 +10,13 @@ const Footer: React.FC = () => {
         <ul>
           <li>
             <Link to="/">
-              <span>Home</span>
+              <span>© 2020 Blog do Dedim Barbeiro nº 10888</span>
             </Link>
           </li>
+
           <li>
             <Link to="/">
-              <span> Projetos</span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/">
-              <span> Sobre </span>
+              <span> Todos os direitos reservados </span>
             </Link>
           </li>
         </ul>
