@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { useViewportScroll } from 'framer-motion';
@@ -6,9 +6,7 @@ import { useViewportScroll } from 'framer-motion';
 import { Container, MenuContainer } from './styles';
 
 const Menu: React.FC = () => {
-  const scrollPosition = window.pageYOffset;
   const { scrollY } = useViewportScroll();
-
 
   const [s, setS] = useState(0);
   const [ss, setSs] = useState(s);
