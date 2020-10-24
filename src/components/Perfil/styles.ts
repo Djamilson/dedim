@@ -126,17 +126,6 @@ export const HeaderContainer = styled.div`
   }
 `;
 
-export const HistoryAbout = styled.div`
-  width: 640px;
-  height: 700vh;
-  z-index: 1;
-
-  > img {
-    width: 640px;
-    height: 400px;
-  }
-`;
-
 export const About = styled.div`
   width: 100%;
   background: ${colors.colorBoxFooter};

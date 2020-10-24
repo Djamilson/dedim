@@ -2,7 +2,7 @@ import React from 'react';
 
 import backgroundImgCabeleireiro from '../../assets/33101.jpg';
 import imgProfile from '../../assets/profile.jpg';
-import { Container, HeaderContainer, HistoryAbout, About } from './styles';
+import { Container, HeaderContainer, About } from './styles';
 
 const Perfil: React.FC = () => {
   return (

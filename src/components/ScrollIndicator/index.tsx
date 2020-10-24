@@ -4,7 +4,7 @@ import { useWindowScroll } from 'react-use';
 import { Container } from './styles';
 
 const ScrollIndicator: React.FC = () => {
-  const { x, y } = useWindowScroll();
+  const { y } = useWindowScroll();
   const [scrolled, setScrolled] = useState(0);
 
   useEffect(() => {
