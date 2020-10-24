@@ -96,7 +96,7 @@ const SectionCabBarbeiro: React.FC = () => {
               </fieldset>
             </About>
             <AboutText>
-              <span>Minha informações</span>
+              <span>Informações</span>
               <p>Cabeleireiro e Barbeiro no Bairro</p>
             </AboutText>
           </li>

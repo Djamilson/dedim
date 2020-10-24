@@ -49,38 +49,22 @@ const Menu: React.FC<Props> = ({ visible }) => {
       <MenuContainer>
         <ul>
           <li>
-            <button
-              type="button"
-              className="btn btn-primary mr-3"
-              onClick={gotoProjectSection}
-            >
+            <button type="button" onClick={gotoProjectSection}>
               <span>Projetos</span>
             </button>
           </li>
           <li>
-            <button
-              type="button"
-              className="btn btn-primary mr-3"
-              onClick={gotoProfileSection}
-            >
+            <button type="button" onClick={gotoProfileSection}>
               <span>Perfil</span>
             </button>
           </li>
           <li>
-            <button
-              type="button"
-              className="btn btn-primary mr-3"
-              onClick={gotoSection01}
-            >
+            <button type="button" onClick={gotoSection01}>
               <span>Cabeleireiro no Bairro</span>
             </button>
           </li>
           <li>
-            <button
-              type="button"
-              className="btn btn-primary mr-3"
-              onClick={gotoSection02}
-            >
+            <button type="button" onClick={gotoSection02}>
               <span>Gabinete do Bairro</span>
             </button>
           </li>
@@ -94,11 +78,7 @@ const Menu: React.FC<Props> = ({ visible }) => {
             </button>
           </li>
           <li>
-            <button
-              type="button"
-              className="btn btn-primary mr-3"
-              onClick={gotoSection04}
-            >
+            <button type="button" onClick={gotoSection04}>
               <span>Novo lar</span>
             </button>
           </li>
