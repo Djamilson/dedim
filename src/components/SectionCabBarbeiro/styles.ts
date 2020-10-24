@@ -18,8 +18,9 @@ export const Container = styled.div`
   background: ${colors.colorPrimary};
 
   margin-top: 80%;
-  @media (max-width: 600px) {
-    margin-top: 580%;
+
+  @media (min-width: 1100px) {
+    margin-top: 120%;
   }
 `;
 

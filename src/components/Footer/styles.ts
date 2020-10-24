@@ -1,3 +1,4 @@
+import { shade } from 'polished';
 import styled from 'styled-components';
 
 import { colors } from '../../styles';
@@ -6,11 +7,12 @@ export const Container = styled.div`
   position: relative;
   max-width: 100vw;
   height: 30vh;
-  top: 40%;
   border: 0;
 
   background: ${colors.colorPrimary};
-  margin-top: 130%;
+  @media (min-width: 1100px) {
+    margin-top: 5900px;
+  }
 `;
 
 export const FooterContainer = styled.footer`
@@ -21,6 +23,17 @@ export const FooterContainer = styled.footer`
   button {
     margin-top: 30px;
     margin-bottom: 30px;
+    border: none;
+
+    background: none;
+    transition: background-color 0.2s;
+
+    svg {
+      &:hover {
+        background: ${shade(0.2, colors.colorSecundary)};
+        border-radius: 100%;
+      }
+    }
   }
 
   ul {

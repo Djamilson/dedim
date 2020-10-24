@@ -10,13 +10,12 @@ const Perfil: React.FC = () => {
       <HeaderContainer>
         <ul>
           <li>
-            <HistoryAbout>
-              <img
-                src={backgroundImgCabeleireiro}
-                alt="Cabeleireiro e Barbeiro no Bairro"
-              />
-            </HistoryAbout>
-            <small>
+            <img
+              src={backgroundImgCabeleireiro}
+              alt="Cabeleireiro e Barbeiro no Bairro"
+            />
+
+            <section>
               <article>
                 <span>Crescimento e oportunidade</span>
                 <div>
@@ -24,7 +23,7 @@ const Perfil: React.FC = () => {
                   <span>Gente de Verdade</span>
                 </div>
               </article>
-            </small>
+            </section>
           </li>
           <li>
             <div>

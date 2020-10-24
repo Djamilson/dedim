@@ -14,7 +14,9 @@ export const Container = styled.div`
   border: none;
   background: ${colors.colorPrimary};
 
-  margin-top: 340%;
+  @media (min-width: 1100px) {
+    margin-top: 5000px;
+  }
 `;
 
 export const HeaderContainer = styled.div`
