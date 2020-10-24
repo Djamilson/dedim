@@ -1,6 +1,5 @@
 import React from 'react';
 
-import MenuRespancive from '../../Header';
 import { Container, MenuContainer } from './styles';
 
 interface Props {
