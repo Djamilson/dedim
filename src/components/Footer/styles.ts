@@ -13,6 +13,10 @@ export const Container = styled.div`
   @media (min-width: 1100px) {
     margin-top: 5900px;
   }
+
+  @media (min-width: 1024px) {
+    margin-top: 10900px;
+  }
 `;
 
 export const FooterContainer = styled.footer`
@@ -20,6 +24,11 @@ export const FooterContainer = styled.footer`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media (min-width: 1024px) {
+    margin-top: 7250px;
+  }
+
   button {
     margin-top: 30px;
     margin-bottom: 30px;

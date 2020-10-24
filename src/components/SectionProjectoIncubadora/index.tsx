@@ -63,9 +63,7 @@ const SectionProjectoIncubadora: React.FC = () => {
                 <p>
                   Proporcionar palestras de como vestir no trabalho, como se
                   comportar, como respeitar o próximo, o que é e como funciona a
-                  hierarquia dentro da empresa, etc... - Buscar juntamente com
-                  os órgãos governamentais existentes capacitação para pessoas
-                  cadastradas no projeto.
+                  hierarquia dentro da empresa, etc...
                 </p>
 
                 <p>

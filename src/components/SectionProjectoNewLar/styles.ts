@@ -17,6 +17,10 @@ export const Container = styled.div`
   @media (min-width: 1100px) {
     margin-top: 5000px;
   }
+
+  @media (min-width: 1024px) {
+    margin-top: 6900px;
+  }
 `;
 
 export const HeaderContainer = styled.div`
@@ -24,6 +28,12 @@ export const HeaderContainer = styled.div`
   margin-left: 17px;
   border: none;
   margin-top: 5rem;
+
+  @media (min-width: 1024px) {
+    margin-top: 1400px;
+    padding: 0 70px;
+  }
+
   ul {
     margin-top: 7rem;
     border: 0;
@@ -35,22 +45,44 @@ export const HeaderContainer = styled.div`
 
     background: none;
 
+    @media (min-width: 1024px) {
+      margin-top: 0px;
+      display: flex;
+      flex-direction: column;
+    }
+
     li {
       display: flex;
       flex-direction: column;
       padding-top: 700px;
+
+      @media (min-width: 1024px) {
+        padding-top: 50px;
+      }
 
       section {
         background: #fff;
         padding-left: 40px;
 
         padding-top: 60px;
+
+        @media (min-width: 1024px) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: 50px 30px;
+        }
+
         strong {
           margin-top: 0px;
           font-size: 18px;
           color: ${colors.colorTextTitle};
           text-align: center;
           margin-left: 200px;
+          @media (min-width: 1024px) {
+            margin-left: 0px;
+          }
         }
 
         div {
@@ -58,6 +90,11 @@ export const HeaderContainer = styled.div`
           margin-right: 30px;
 
           border: none;
+
+          @media (min-width: 1024px) {
+            margin-top: 0px;
+            margin-right: 0px;
+          }
           h2 {
             border: 0;
             font-weight: bolder;
@@ -65,6 +102,9 @@ export const HeaderContainer = styled.div`
             font-size: 17px;
             margin-left: 0px;
             margin-bottom: 20px;
+            @media (min-width: 1024px) {
+              padding-top: 40px;
+            }
           }
 
           p {
@@ -77,6 +117,10 @@ export const HeaderContainer = styled.div`
             font-family: 'Poppins', sans-serif;
             font: 300 1rem Poppins;
             font-style: normal;
+
+            @media (min-width: 1024px) {
+              padding-right: 40px;
+            }
           }
         }
 

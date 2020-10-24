@@ -15,8 +15,8 @@ export const Container = styled.div`
   align-items: center;
   display: flex;
 
-  @media (min-width: 1100px) {
-    margin-top: 90%;
+  @media (min-width: 1024px) {
+    margin-top: 1500px;
   }
 `;
 
@@ -25,8 +25,8 @@ export const HeaderContainer = styled.div`
   margin-left: 17px;
   padding: 100px;
 
-  @media (min-width: 1100px) {
-    margin-top: 200px;
+  @media (min-width: 1024px) {
+    margin-top: 250px;
   }
 
   ul {
@@ -36,6 +36,14 @@ export const HeaderContainer = styled.div`
     grid-gap: 20px;
     list-style: none;
     margin-top: 0px;
+
+    @media (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 450px;
+    }
 
     li {
       height: 420px;
@@ -51,6 +59,10 @@ export const HeaderContainer = styled.div`
         width: 100%;
         height: 30vh;
         background: #fff;
+
+        @media (min-width: 1024px) {
+          width: 640px;
+        }
 
         span {
           font-size: 18px;
@@ -103,6 +115,12 @@ export const HeaderContainer = styled.div`
           font: 300 0.9rem Poppins;
           font-style: normal;
         }
+      }
+    }
+
+    li + li {
+      @media (min-width: 1024px) {
+        margin-top: 50px;
       }
     }
   }

@@ -18,9 +18,11 @@ export const Container = styled.div`
   background: ${colors.colorPrimary};
 
   margin-top: 80%;
-
   @media (min-width: 1100px) {
     margin-top: 120%;
+  }
+  @media (min-width: 1024px) {
+    margin-top: 2400px;
   }
 `;
 
@@ -30,8 +32,9 @@ export const HeaderContainer = styled.div`
   border: none;
   margin-top: 10%;
 
-  @media (max-width: 600px) {
-    margin-top: 110%;
+  @media (min-width: 1024px) {
+    margin-top: 1280px;
+    padding: 0 60px;
   }
 
   ul {
@@ -45,31 +48,48 @@ export const HeaderContainer = styled.div`
 
     background: none;
 
-    @media (max-width: 600px) {
-      grid-template-columns: 40rem;
-    }
-
     li {
       display: flex;
       flex-direction: column;
       padding-top: 700px;
 
+      @media (min-width: 1024px) {
+        padding-top: 50px;
+      }
+
       section {
         background: #fff;
         padding-left: 40px;
-
         padding-top: 60px;
+
+        @media (min-width: 1024px) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: 50px 30px;
+        }
+
         strong {
           margin-top: 0px;
           font-size: 18px;
           color: ${colors.colorTextTitle};
           text-align: center;
           margin-left: 100px;
+
+          @media (min-width: 1024px) {
+            margin-left: 0px;
+          }
         }
 
         div {
           margin-top: 30px;
           margin-right: 30px;
+
+          @media (min-width: 1024px) {
+            margin-top: 0px;
+            margin-right: 0px;
+          }
 
           border: none;
           h2 {
@@ -79,6 +99,9 @@ export const HeaderContainer = styled.div`
             font-size: 17px;
             margin-left: 0px;
             margin-bottom: 20px;
+            @media (min-width: 1024px) {
+              padding-top: 40px;
+            }
           }
 
           p {
@@ -91,6 +114,10 @@ export const HeaderContainer = styled.div`
             font-family: 'Poppins', sans-serif;
             font: 300 1rem Poppins;
             font-style: normal;
+
+            @media (min-width: 1024px) {
+              padding-right: 40px;
+            }
           }
         }
 
@@ -133,6 +160,13 @@ export const HeaderContainer = styled.div`
           padding-bottom: 30px;
         }
       }
+    }
+
+    @media (min-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
 `;
