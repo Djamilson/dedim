@@ -1,47 +1,51 @@
-import React, { useRef } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 
+import MenuRespancive from '../../Header';
 import { Container, MenuContainer } from './styles';
 
-const Menu: React.FC = (emailInputRef) => {
+interface Props {
+  visible: boolean;
+}
+
+const Menu: React.FC<Props> = ({ visible }) => {
   const gotoProjectSection = () =>
     window.scrollTo({
-      top: 1500,
+      top: 400,
       behavior: 'smooth',
     });
 
   const gotoProfileSection = () =>
     window.scrollTo({
-      top: 2500,
+      top: 1800,
       behavior: 'smooth',
     });
 
   const gotoSection01 = () =>
     window.scrollTo({
-      top: 3300,
+      top: 2700,
       behavior: 'smooth',
     });
 
   const gotoSection02 = () =>
     window.scrollTo({
-      top: 4900,
+      top: 4400,
       behavior: 'smooth',
     });
 
   const gotoSection03 = () =>
     window.scrollTo({
-      top: 6300,
+      top: 5900,
       behavior: 'smooth',
     });
 
   const gotoSection04 = () =>
     window.scrollTo({
-      top: 8100,
+      top: 8000,
       behavior: 'smooth',
     });
 
   return (
-    <Container>
+    <Container visible={visible}>
       <MenuContainer>
         <ul>
           <li>

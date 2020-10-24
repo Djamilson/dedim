@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 
-import backgroundImg from '../../assets/backgroundLogin.png';
 import { colors } from '../../styles';
 
 export const Container = styled.div`
   position: relative;
   height: 100%;
 
-  margin-top: 70%;
-  background: none;
+  margin-top: 0;
+  background: ${colors.colorPrimary};
   border: 0;
 
   padding: 10px;
@@ -16,8 +15,8 @@ export const Container = styled.div`
   align-items: center;
   display: flex;
 
-  @media (max-width: 600px) {
-    margin-top: 150%;
+  @media (min-width: 1100px) {
+    margin-top: 90%;
   }
 `;
 
@@ -26,28 +25,50 @@ export const HeaderContainer = styled.div`
   margin-left: 17px;
   padding: 100px;
 
-  ul {
-    margin-top: 7rem;
-    border: 0;
+  @media (min-width: 1100px) {
+    margin-top: 200px;
+  }
 
+  ul {
+    border: 0;
     display: grid;
     grid-template-columns: 40rem 20rem;
     grid-gap: 20px;
     list-style: none;
-
-    flex: 1;
-    background: url(${backgroundImg}) no-repeat center;
-    background-size: cover;
-
-    @media (max-width: 600px) {
-      grid-template-columns: 40rem;
-    }
+    margin-top: 0px;
 
     li {
-      display: flex;
-      flex-direction: column;
+      height: 420px;
 
-      small {
+      > img {
+        width: 640px;
+        height: 400px;
+      }
+      > div {
+        margin-top: 115px;
+      }
+      > section {
+        width: 100%;
+        height: 30vh;
+        background: #fff;
+
+        span {
+          font-size: 18px;
+          color: ${colors.colorTextTitle};
+          text-align: center;
+        }
+
+        strong {
+          color: ${colors.colorTextInWhite};
+          margin-top: 6px;
+          margin-bottom: 6px;
+          font-family: 'Poppins', sans-serif;
+          font: 300 0.9rem Poppins;
+          font-style: italic;
+        }
+      }
+
+      article {
         width: 100%;
         height: 20vh;
         background: #fff;
@@ -57,80 +78,30 @@ export const HeaderContainer = styled.div`
         display: flex;
         flex-direction: column;
 
-        article {
-          width: 100%;
-          height: 20vh;
-          background: #fff;
-
-          align-items: center;
-          justify-content: center;
-          display: flex;
-          flex-direction: column;
-
-          padding: 30px;
-          span {
-            font-size: 18px;
-            color: ${colors.colorTextTitle};
-            text-align: center;
-          }
-          strong {
-            color: ${colors.colorTextInWhite};
-            margin-top: 6px;
-            margin-bottom: 6px;
-            font-family: 'Poppins', sans-serif;
-            font: 300 0.9rem Poppins;
-            font-style: italic;
-          }
-          p {
-            width: 100%;
-            border: 0;
-            text-align: justify;
-            color: ${colors.colorTextBase};
-            margin-top: 10px;
-            margin-bottom: 6px;
-            font-family: 'Poppins', sans-serif;
-            font: 300 0.9rem Poppins;
-            font-style: normal;
-          }
+        padding: 80px 30px;
+        span {
+          font-size: 18px;
+          color: ${colors.colorTextTitle};
+          text-align: center;
         }
-      }
-
-      section {
-        width: 100%;
-        height: 25vh;
-        background: #fff;
-
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        article {
+        strong {
+          color: ${colors.colorTextInWhite};
+          margin-top: 6px;
+          margin-bottom: 6px;
+          font-family: 'Poppins', sans-serif;
+          font: 300 0.9rem Poppins;
+          font-style: italic;
+        }
+        p {
           width: 100%;
-          height: 25vh;
-          background: #fff;
-
-          align-items: center;
-          justify-content: center;
-          display: flex;
-          flex-direction: column;
-
-          padding: 30px;
-          span {
-            font-size: 18px;
-            color: ${colors.colorTextTitle};
-            text-align: center;
-          }
-          p {
-            width: 100%;
-            border: 0;
-            text-align: justify;
-            color: ${colors.colorTextBase};
-            margin-top: 10px;
-            margin-bottom: 6px;
-            font-family: 'Poppins', sans-serif;
-            font: 300 0.9rem Poppins;
-            font-style: normal;
-          }
+          border: 0;
+          text-align: justify;
+          color: ${colors.colorTextBase};
+          margin-top: 10px;
+          margin-bottom: 6px;
+          font-family: 'Poppins', sans-serif;
+          font: 300 0.9rem Poppins;
+          font-style: normal;
         }
       }
     }
@@ -138,15 +109,13 @@ export const HeaderContainer = styled.div`
 `;
 
 export const HistoryAbout = styled.div`
-  height: 60vh;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 640px;
+  height: 700vh;
+  z-index: 1;
 
   > img {
-    width: 100vw;
-    height: 100vh;
+    width: 640px;
+    height: 400px;
   }
 `;
 

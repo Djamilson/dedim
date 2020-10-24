@@ -17,34 +17,38 @@ export const Container = styled.div`
 export const ProjectContainer = styled.div`
   ul {
     border: 0;
-    padding: 0 16rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    padding: 0;
     list-style: none;
 
-    @media (max-width: 600px) {
-      grid-template-columns: repeat(1, 1fr);
-      padding: 0 8rem;
-      margin-left: 40px;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    @media (max-width: 500px) {
-      grid-template-columns: repeat(1, 1fr);
-      padding: 0 8rem;
-      margin-left: 40px;
+    @media (min-width: 1100px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 16rem;
+      grid-gap: 20px;
     }
 
     li {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
       background: none;
 
-      margin-top: 15%;
+      max-width: 340px;
+      margin-top: 5%;
+
+      @media (min-width: 1100px) {
+        margin-top: 15%;
+      }
 
       img {
-        width: 100%;
-        height: 40vh;
+        width: 340px;
+        height: 50vh;
       }
 
       section {

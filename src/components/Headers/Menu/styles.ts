@@ -2,24 +2,32 @@ import styled from 'styled-components';
 
 import { colors } from '../../../styles';
 
-export const Container = styled.div`
+interface Props {
+  visible: boolean;
+}
+
+export const Container = styled.div<Props>`
   max-width: 100vw;
-  width: 100vw;
-  height: 15vh;
+  width: 80vw;
+  height: 10vh;
+  margin-left: 50px;
   top: 0;
   border: 0;
 
-  background: ${colors.colorPrimary};
+  background: none;
+  display: ${(props) => (props.visible ? 'none' : 'block')};
 `;
 
 export const MenuContainer = styled.div`
+  margin-top: 20px;
+
   ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 
-    padding-top: 30px;
+    padding-top: 0px;
     margin-bottom: 0px;
     border: 0;
 

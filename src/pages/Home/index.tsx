@@ -3,7 +3,7 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import Header from '../../components/Headers/Header';
 import HeaderLogo from '../../components/Headers/HeaderLogo';
-import Menu from '../../components/Headers/Menu';
+import Menu from '../../components/Header';
 import Perfil from '../../components/Perfil';
 import Project from '../../components/Project';
 import ScrollIndicator from '../../components/ScrollIndicator';
