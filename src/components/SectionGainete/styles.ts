@@ -5,7 +5,6 @@ import { colors } from '../../styles';
 export const Container = styled.div`
   position: relative;
   height: 100%;
-
   border: 0;
   justify-content: center;
   align-items: baseline;
@@ -28,7 +27,7 @@ export const Container = styled.div`
 
   @media (min-width: 768px) and (max-width: 1024px) {
     margin-top: 4600px;
-    height: 1800px;
+    height: 1940px;
   }
 
   @media (max-width: 630px) {
@@ -84,6 +83,9 @@ export const HeaderContainer = styled.div`
       section {
         background: #fff;
         padding-left: 40px;
+        @media (max-width: 768px) {
+          padding: 10px;
+        }
         padding-top: 60px;
 
         display: flex;
@@ -101,6 +103,11 @@ export const HeaderContainer = styled.div`
           margin-top: 30px;
           margin-right: 30px;
           border: none;
+
+          @media (max-width: 768px) {
+            margin-right: 0px;
+          }
+
           h2 {
             border: 0;
             font-weight: bolder;

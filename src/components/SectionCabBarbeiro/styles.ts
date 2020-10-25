@@ -14,6 +14,7 @@ export const Container = styled.div`
 
   border: none;
   overflow: hidden;
+
   background: none;
 
   @media (max-width: 768px) {
@@ -76,6 +77,9 @@ export const HeaderContainer = styled.div`
       section {
         background: #fff;
         padding-left: 40px;
+        @media (max-width: 768px) {
+          padding: 10px;
+        }
         padding-top: 60px;
 
         display: flex;
@@ -92,6 +96,9 @@ export const HeaderContainer = styled.div`
         div {
           margin-top: 30px;
           margin-right: 30px;
+          @media (max-width: 768px) {
+            margin-right: 0;
+          }
           border: none;
           h2 {
             border: 0;
