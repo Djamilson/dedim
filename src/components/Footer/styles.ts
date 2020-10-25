@@ -14,7 +14,7 @@ export const Container = styled.div`
     margin-top: 5900px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 960px) {
     margin-top: 10900px;
   }
 `;
@@ -25,7 +25,7 @@ export const FooterContainer = styled.footer`
   justify-content: center;
   flex-direction: column;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 960px) {
     margin-top: 7250px;
   }
 

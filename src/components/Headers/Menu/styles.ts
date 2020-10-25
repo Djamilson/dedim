@@ -20,7 +20,7 @@ export const Container = styled.div<Props>`
 
 export const MenuContainer = styled.div`
   margin-top: 20px;
-
+  overflow: hidden;
   ul {
     display: flex;
     flex-direction: row;

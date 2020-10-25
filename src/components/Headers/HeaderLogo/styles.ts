@@ -16,6 +16,7 @@ export const HeaderContainer = styled.div`
   background: ${colors.colorPrimary};
   margin-top: 0rem;
   flex-direction: column;
+  overflow: hidden;
 
   border-bottom: ${colors.colorTextInPrimary} solid 1px;
 

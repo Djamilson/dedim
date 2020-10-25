@@ -4,29 +4,60 @@ import { colors } from '../../styles';
 
 export const Container = styled.div`
   position: relative;
-  height: 100%;
+  background: none;
 
-  margin-top: 0;
+  justify-content: center;
+  align-items: baseline;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    margin-top: 1600px;
+    height: 1200px;
+  }
+
+  @media (min-width: 960px) {
+    margin-top: 1300px;
+    height: 1000px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-top: 1500px;
+    height: 1300px;
+  }
+`;
+
+export const Content = styled.div`
   background: ${colors.colorPrimary};
+  width: 400vw;
+  height: 50%;
+
   border: 0;
 
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-
-  @media (min-width: 1024px) {
-    margin-top: 1500px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding: 0;
   }
 `;
 
 export const HeaderContainer = styled.div`
+  display: flex;
+  position: relative;
   justify-content: center;
-  margin-left: 17px;
-  padding: 100px;
+  width: 100%;
 
-  @media (min-width: 1024px) {
-    margin-top: 250px;
+  @media (max-width: 1024px) {
+    padding: 100px;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+    padding: 100px 40px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin: 0 auto;
+    padding: 100px;
   }
 
   ul {
@@ -35,33 +66,59 @@ export const HeaderContainer = styled.div`
     grid-template-columns: 40rem 20rem;
     grid-gap: 20px;
     list-style: none;
-    margin-top: 0px;
+    margin-top: 150px;
 
-    @media (min-width: 1024px) {
+    @media (max-width: 768px) {
+      /* screen width is less than 768px (medium) */
       display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: center;
-      margin-top: 450px;
+      margin-top: 0px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      margin-top: 0px;
     }
 
     li {
       height: 420px;
 
       > img {
-        width: 640px;
-        height: 400px;
+        width: 100%;
+        height: calc(100%);
+        @media (min-width: 768px) and (max-width: 1023.9px) {
+          width: 86%;
+          max-width: 690px;
+          max-height: 480px;
+          height: auto;
+          margin-left: 52.4px;
+        }
       }
       > div {
-        margin-top: 115px;
+        margin-top: 0px;
+
+        @media (max-width: 768px) {
+          margin-top: 215px;
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+          margin-top: 215px;
+        }
       }
       > section {
         width: 100%;
-        height: 30vh;
+        height: 40vh;
         background: #fff;
 
-        @media (min-width: 1024px) {
-          width: 640px;
+        @media (min-width: 768px) and (max-width: 1024px) {
+          margin: 0 auto;
+          max-width: 640px;
         }
 
         span {
@@ -119,7 +176,7 @@ export const HeaderContainer = styled.div`
     }
 
     li + li {
-      @media (min-width: 1024px) {
+      @media (min-width: 960px) {
         margin-top: 50px;
       }
     }
@@ -130,6 +187,7 @@ export const About = styled.div`
   width: 100%;
   background: ${colors.colorBoxFooter};
   padding: 0 40px;
+
   fieldset {
     font-family: 'Poppins', sans-serif;
     border: 0;

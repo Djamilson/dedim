@@ -118,7 +118,7 @@ export const Content = styled.div`
       display: block;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 960px) {
       display: none;
     }
   }
@@ -217,7 +217,7 @@ export const NavMenu = styled.div`
   width: 100%;
   display: none;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 960px) {
     display: block;
   }
 `;

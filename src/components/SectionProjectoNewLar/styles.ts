@@ -13,12 +13,12 @@ export const Container = styled.div`
 
   border: none;
   background: ${colors.colorPrimary};
-
+  /*
   @media (min-width: 1100px) {
     margin-top: 5000px;
-  }
+  }*/
 
-  @media (min-width: 1024px) {
+  @media (min-width: 960px) {
     margin-top: 6900px;
   }
 `;
@@ -29,7 +29,7 @@ export const HeaderContainer = styled.div`
   border: none;
   margin-top: 5rem;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 960px) {
     margin-top: 1400px;
     padding: 0 70px;
   }
@@ -45,7 +45,7 @@ export const HeaderContainer = styled.div`
 
     background: none;
 
-    @media (min-width: 1024px) {
+    @media (min-width: 960px) {
       margin-top: 0px;
       display: flex;
       flex-direction: column;
@@ -56,7 +56,7 @@ export const HeaderContainer = styled.div`
       flex-direction: column;
       padding-top: 700px;
 
-      @media (min-width: 1024px) {
+      @media (min-width: 960px) {
         padding-top: 50px;
       }
 
@@ -66,7 +66,7 @@ export const HeaderContainer = styled.div`
 
         padding-top: 60px;
 
-        @media (min-width: 1024px) {
+        @media (min-width: 960px) {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -80,7 +80,7 @@ export const HeaderContainer = styled.div`
           color: ${colors.colorTextTitle};
           text-align: center;
           margin-left: 200px;
-          @media (min-width: 1024px) {
+          @media (min-width: 960px) {
             margin-left: 0px;
           }
         }
@@ -91,7 +91,7 @@ export const HeaderContainer = styled.div`
 
           border: none;
 
-          @media (min-width: 1024px) {
+          @media (min-width: 960px) {
             margin-top: 0px;
             margin-right: 0px;
           }
@@ -102,7 +102,7 @@ export const HeaderContainer = styled.div`
             font-size: 17px;
             margin-left: 0px;
             margin-bottom: 20px;
-            @media (min-width: 1024px) {
+            @media (min-width: 960px) {
               padding-top: 40px;
             }
           }
@@ -118,7 +118,7 @@ export const HeaderContainer = styled.div`
             font: 300 1rem Poppins;
             font-style: normal;
 
-            @media (min-width: 1024px) {
+            @media (min-width: 960px) {
               padding-right: 40px;
             }
           }

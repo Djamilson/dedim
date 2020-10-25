@@ -7,90 +7,91 @@ export const Container = styled.div`
   height: 100%;
 
   border: 0;
-
-  padding: 10px;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   display: flex;
   margin-bottom: 100px;
 
   border: none;
-  background: ${colors.colorPrimary};
+  overflow: hidden;
+  background: none;
 
-  margin-top: 80%;
-  @media (min-width: 1100px) {
-    margin-top: 120%;
+  @media (max-width: 768px) {
+    margin-top: 2600px;
+    height: 2100px;
   }
+
   @media (min-width: 1024px) {
-    margin-top: 2400px;
+    margin-top: 2000px;
+    height: 2000px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-top: 2600px;
+    height: 2100px;
+  }
+
+  @media (max-width: 630px) {
+    height: 2650px;
   }
 `;
 
+export const Content = styled.div`
+  background: ${colors.colorPrimary};
+  width: 400vw;
+  height: 50%;
+  padding: 10px;
+
+  border: 0;
+`;
+
 export const HeaderContainer = styled.div`
+  position: relative;
   justify-content: center;
   margin-left: 17px;
-  border: none;
-  margin-top: 10%;
+  padding: 100px;
 
-  @media (min-width: 1024px) {
-    margin-top: 1280px;
-    padding: 0 60px;
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: 768px) and (max-width: 960px) {
+    margin-top: 50px;
   }
 
   ul {
-    margin-top: 7rem;
-    border: 0;
-
-    display: grid;
-    grid-template-columns: 40rem 20rem;
-    grid-gap: 20px;
     list-style: none;
 
-    background: none;
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: 40rem 20rem;
+      grid-gap: 20px;
+    }
 
     li {
       display: flex;
       flex-direction: column;
-      padding-top: 700px;
-
-      @media (min-width: 1024px) {
-        padding-top: 50px;
-      }
+      padding-top: 100px;
 
       section {
         background: #fff;
         padding-left: 40px;
         padding-top: 60px;
 
-        @media (min-width: 1024px) {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          padding: 50px 30px;
-        }
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
 
         strong {
           margin-top: 0px;
           font-size: 18px;
           color: ${colors.colorTextTitle};
           text-align: center;
-          margin-left: 100px;
-
-          @media (min-width: 1024px) {
-            margin-left: 0px;
-          }
         }
-
         div {
           margin-top: 30px;
           margin-right: 30px;
-
-          @media (min-width: 1024px) {
-            margin-top: 0px;
-            margin-right: 0px;
-          }
-
           border: none;
           h2 {
             border: 0;
@@ -99,7 +100,7 @@ export const HeaderContainer = styled.div`
             font-size: 17px;
             margin-left: 0px;
             margin-bottom: 20px;
-            @media (min-width: 1024px) {
+            @media (min-width: 960px) {
               padding-top: 40px;
             }
           }
@@ -115,7 +116,7 @@ export const HeaderContainer = styled.div`
             font: 300 1rem Poppins;
             font-style: normal;
 
-            @media (min-width: 1024px) {
+            @media (min-width: 960px) {
               padding-right: 40px;
             }
           }
@@ -145,6 +146,10 @@ export const HeaderContainer = styled.div`
               font-family: 'Poppins', sans-serif;
               font: 300 1rem Poppins;
               font-style: normal;
+
+              @media (max-width: 768px) {
+                padding-right: 30px;
+              }
             }
           }
           article + article {
@@ -160,13 +165,6 @@ export const HeaderContainer = styled.div`
           padding-bottom: 30px;
         }
       }
-    }
-
-    @media (min-width: 1024px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
     }
   }
 `;
@@ -212,10 +210,15 @@ export const About = styled.div`
 
 export const AboutText = styled.article`
   width: 100%;
-  height: 25vh;
+  height: 45vh;
 
   background: ${colors.colorBoxBase};
-  padding: 30px 50px;
+
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 
   span {
     font-size: 18px;
@@ -223,14 +226,10 @@ export const AboutText = styled.article`
     text-align: center;
     margin-bottom: 10px;
   }
-  > p {
-    width: 100%;
-    height: 100vh;
-    border: 0;
+
+  strong {
     text-align: justify;
     color: ${colors.colorTextBase};
-    margin-top: 0px;
-    margin-bottom: 0px;
     font-family: 'Poppins', sans-serif;
     font: 300 1rem Poppins;
     font-style: italic;
