@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import { Container, OrderLI, NavigationButton } from './styles';
 
@@ -8,41 +8,51 @@ interface Props {
 }
 
 const MenuResponsive: React.FC<Props> = ({ handleToggleMenu, isActive }) => {
-  const gotoProjectSection = () =>
+  const gotoProjectSection = () => {
+    handleToggleMenu();
     window.scrollTo({
       top: 400,
       behavior: 'smooth',
     });
+  };
 
-  const gotoProfileSection = () =>
+  const gotoProfileSection = () => {
+    handleToggleMenu();
     window.scrollTo({
       top: 2000,
       behavior: 'smooth',
     });
-
-  const gotoSection01 = () =>
+  };
+  const gotoSection01 = () => {
+    handleToggleMenu();
     window.scrollTo({
       top: 3200,
       behavior: 'smooth',
     });
-
-  const gotoSection02 = () =>
+  };
+  const gotoSection02 = () => {
+    handleToggleMenu();
     window.scrollTo({
       top: 5100,
       behavior: 'smooth',
     });
+  };
 
-  const gotoSection03 = () =>
+  const gotoSection03 = () => {
+    handleToggleMenu();
     window.scrollTo({
       top: 6800,
       behavior: 'smooth',
     });
+  };
 
-  const gotoSection04 = () =>
+  const gotoSection04 = () => {
+    handleToggleMenu();
     window.scrollTo({
       top: 9400,
       behavior: 'smooth',
     });
+  };
 
   return (
     <Container visible={isActive}>
