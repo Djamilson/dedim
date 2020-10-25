@@ -52,6 +52,14 @@ const Home: React.FC = () => {
           <SectionProjectoIncubadora />
         </Sticky>
       </Section>
+
+      <Section>
+        <Sticky>
+          <SectionProjectoNewLar />
+        </Sticky>
+      </Section>
+
+      <Footer />
     </Container>
   );
 };

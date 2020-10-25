@@ -16,7 +16,6 @@ export const Container = styled.div`
   overflow: hidden;
   background: none;
 
-  border: 1px solid #ff0;
   @media (max-width: 768px) {
     margin-top: 6200px;
     height: 2550px;
