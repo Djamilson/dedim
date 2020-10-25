@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { Container, OrderLI, NavigationButton } from './styles';
 
@@ -16,36 +16,36 @@ const MenuResponsive: React.FC<Props> = ({ handleToggleMenu, isActive }) => {
 
   const gotoProfileSection = () =>
     window.scrollTo({
-      top: 1800,
+      top: 2000,
       behavior: 'smooth',
     });
 
   const gotoSection01 = () =>
     window.scrollTo({
-      top: 2700,
+      top: 3200,
       behavior: 'smooth',
     });
 
   const gotoSection02 = () =>
     window.scrollTo({
-      top: 4400,
+      top: 5100,
       behavior: 'smooth',
     });
 
   const gotoSection03 = () =>
     window.scrollTo({
-      top: 5900,
+      top: 6800,
       behavior: 'smooth',
     });
 
   const gotoSection04 = () =>
     window.scrollTo({
-      top: 8000,
+      top: 9400,
       behavior: 'smooth',
     });
 
   return (
-    <Container visible={Boolean(isActive)} className={isActive ? 'active' : ''}>
+    <Container visible={isActive}>
       <ul>
         <OrderLI>
           <NavigationButton type="button" onClick={gotoProjectSection}>

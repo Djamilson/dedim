@@ -18,6 +18,7 @@ export const HeaderContainer = styled.div`
   padding: 1rem;
   display: flex;
   align-items: center;
+  overflow: hidden;
   a {
     > img {
       height: 2rem;

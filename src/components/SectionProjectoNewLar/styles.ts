@@ -3,98 +3,149 @@ import styled from 'styled-components';
 import { colors } from '../../styles';
 
 export const Container = styled.div`
+  position: relative;
   height: 100%;
 
-  padding: 10px;
+  border: 0;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   display: flex;
   margin-bottom: 100px;
 
   border: none;
-  background: ${colors.colorPrimary};
+  overflow: hidden;
+  background: none;
 
-  @media (min-width: 1100px) {
-    margin-top: 5000px;
+  @media (max-width: 768px) {
+    margin-top: 8500px;
+    height: 1950px;
   }
 
   @media (min-width: 1024px) {
-    margin-top: 6900px;
+    margin-top: 6400px;
+    height: 1600px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-top: 8500px;
+    height: 1950px;
+  }
+
+  @media (max-width: 662px) {
+    margin-top: 8500px;
+    height: 2130px;
+  }
+
+  @media (max-width: 640px) {
+    margin-top: 8500px;
+    height: 2130px;
+  }
+
+  @media (max-width: 574px) {
+    margin-top: 8600px;
+    height: 2330px;
+  }
+
+  @media (max-width: 541px) {
+    margin-top: 8700px;
+    height: 2330px;
+  }
+
+  @media (max-width: 530px) {
+    margin-top: 9100px;
+    height: 2330px;
+  }
+
+  @media (max-width: 518px) {
+    margin-top: 9450px;
+    height: 2330px;
+  }
+
+  @media (max-width: 495px) {
+    height: 2330px;
+    margin-top: 9650px;
   }
 `;
 
+export const Content = styled.div`
+  background: ${colors.colorPrimary};
+  width: 400vw;
+  height: 60%;
+
+  @media (max-width: 768px) {
+    height: 30%;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    height: 40%;
+  }
+
+  padding: 10px;
+
+  border: 0;
+`;
+
 export const HeaderContainer = styled.div`
+  position: relative;
   justify-content: center;
   margin-left: 17px;
-  border: none;
-  margin-top: 5rem;
+  padding: 100px;
 
-  @media (min-width: 1024px) {
-    margin-top: 1400px;
-    padding: 0 70px;
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: 768px) and (max-width: 960px) {
+    margin-top: 50px;
   }
 
   ul {
-    margin-top: 7rem;
-    border: 0;
-
-    display: grid;
-    grid-template-columns: 40rem 20rem;
-    grid-gap: 20px;
     list-style: none;
 
-    background: none;
-
     @media (min-width: 1024px) {
-      margin-top: 0px;
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 40rem 20rem;
+      grid-gap: 20px;
     }
 
     li {
       display: flex;
       flex-direction: column;
-      padding-top: 700px;
-
-      @media (min-width: 1024px) {
-        padding-top: 50px;
-      }
+      padding-top: 100px;
 
       section {
         background: #fff;
         padding-left: 40px;
 
+        @media (max-width: 768px) {
+          padding: 10px;
+        }
+
         padding-top: 60px;
 
-        @media (min-width: 1024px) {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          padding: 50px 30px;
-        }
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
 
         strong {
           margin-top: 0px;
           font-size: 18px;
           color: ${colors.colorTextTitle};
           text-align: center;
-          margin-left: 200px;
-          @media (min-width: 1024px) {
-            margin-left: 0px;
+          @media (max-width: 768px) {
+            margin-top: 50px;
           }
         }
-
         div {
           margin-top: 30px;
           margin-right: 30px;
 
-          border: none;
-
-          @media (min-width: 1024px) {
-            margin-top: 0px;
+          @media (max-width: 768px) {
             margin-right: 0px;
           }
+
+          border: none;
           h2 {
             border: 0;
             font-weight: bolder;
@@ -102,7 +153,7 @@ export const HeaderContainer = styled.div`
             font-size: 17px;
             margin-left: 0px;
             margin-bottom: 20px;
-            @media (min-width: 1024px) {
+            @media (min-width: 960px) {
               padding-top: 40px;
             }
           }
@@ -118,9 +169,12 @@ export const HeaderContainer = styled.div`
             font: 300 1rem Poppins;
             font-style: normal;
 
-            @media (min-width: 1024px) {
+            @media (min-width: 960px) {
               padding-right: 40px;
             }
+          }
+          p + p {
+            margin-top: 15px;
           }
         }
 
@@ -148,6 +202,10 @@ export const HeaderContainer = styled.div`
               font-family: 'Poppins', sans-serif;
               font: 300 1rem Poppins;
               font-style: normal;
+
+              @media (max-width: 768px) {
+                padding-right: 30px;
+              }
             }
           }
           article + article {
@@ -208,11 +266,11 @@ export const About = styled.div`
 
 export const AboutText = styled.article`
   width: 100%;
-  height: 25vh;
+  height: 45vh;
 
   background: ${colors.colorBoxBase};
-  padding: 30px 0px;
 
+  padding-top: 20px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -224,11 +282,10 @@ export const AboutText = styled.article`
     text-align: center;
     margin-bottom: 10px;
   }
+
   strong {
-    border: 0;
     text-align: justify;
     color: ${colors.colorTextBase};
-
     font-family: 'Poppins', sans-serif;
     font: 300 1rem Poppins;
     font-style: italic;

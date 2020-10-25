@@ -17,7 +17,6 @@ const Home: React.FC = () => {
   return (
     <Container>
       <ScrollIndicator />
-
       <Section
         style={{
           height: '20%',
@@ -35,21 +34,25 @@ const Home: React.FC = () => {
           <Perfil />
         </Sticky>
       </Section>
+
       <Section>
         <Sticky>
           <SectionCabBarbeiro />
         </Sticky>
       </Section>
+
       <Section>
         <Sticky>
           <SectionGabinete />
         </Sticky>
       </Section>
+
       <Section>
         <Sticky>
           <SectionProjectoIncubadora />
         </Sticky>
       </Section>
+
       <Section>
         <Sticky>
           <SectionProjectoNewLar />

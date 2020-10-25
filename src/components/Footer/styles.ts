@@ -7,15 +7,57 @@ export const Container = styled.div`
   position: relative;
   max-width: 100vw;
   height: 30vh;
-  border: 0;
 
   background: ${colors.colorPrimary};
-  @media (min-width: 1100px) {
-    margin-top: 5900px;
+
+  @media (max-width: 768px) {
+    margin-top: 10200px;
+    height: 500px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1024px) and (max-width: 1500px) {
+    margin-top: 7700px;
+    height: 400px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-top: 10200px;
+    height: 400px;
+  }
+
+  @media (max-width: 662px) {
+    margin-top: 10200px;
+    height: 500px;
+  }
+
+  @media (max-width: 640px) {
+    margin-top: 10200px;
+    height: 500px;
+  }
+
+  @media (max-width: 574px) {
+    margin-top: 10300px;
+    height: 500px;
+  }
+
+  @media (max-width: 541px) {
+    margin-top: 10500px;
+    height: 500px;
+  }
+
+  @media (max-width: 530px) {
     margin-top: 10900px;
+    height: 500px;
+  }
+
+  @media (max-width: 518px) {
+    margin-top: 11350px;
+    height: 500px;
+  }
+
+  @media (max-width: 495px) {
+    margin-top: 11650px;
+    height: 500px;
   }
 `;
 
@@ -24,10 +66,6 @@ export const FooterContainer = styled.footer`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  @media (min-width: 1024px) {
-    margin-top: 7250px;
-  }
 
   button {
     margin-top: 30px;
@@ -46,21 +84,30 @@ export const FooterContainer = styled.footer`
   }
 
   ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
     margin-top: 20px;
     margin-bottom: 20px;
     border: 0;
+    list-style: none;
+
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 40rem 20rem;
+      grid-gap: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
 
     li {
       list-style: none;
-
       font-size: 14px;
 
       a {
+        @media (min-width: 768px) {
+          margin: 20px 0;
+        }
+
         text-decoration: none;
         color: ${colors.colorTextInPrimary};
 
@@ -76,53 +123,6 @@ export const FooterContainer = styled.footer`
 
     li + li {
       margin-left: 40px;
-    }
-  }
-`;
-
-export const Header = styled.div`
-  margin-top: -2.8rem;
-  color: ${colors.colorTextInPrimary};
-`;
-
-export const BoxLogin = styled.div`
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-
-  div {
-    display: flex;
-    flex-direction: column;
-    margin-left: 16px;
-    line-height: 24px;
-
-    align-items: center;
-    justify-content: center;
-
-    span {
-      color: ${colors.colorTextInPrimary};
-    }
-
-    a {
-      text-decoration: none;
-      color: #ff9000;
-      display: flex;
-
-      align-items: center;
-      justify-content: center;
-      transition: background-color 0.2s;
-
-      span svg {
-        color: #fff;
-        margin-top: 5px;
-        width: 20px;
-        height: 20px;
-        margin-left: 15px;
-      }
-
-      &:hover {
-        opacity: 0.8;
-      }
     }
   }
 `;
