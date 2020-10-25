@@ -17,8 +17,8 @@ export const Container = styled.div`
   background: none;
 
   @media (max-width: 768px) {
-    margin-top: 6400px;
-    height: 1600px;
+    margin-top: 8500px;
+    height: 1950px;
   }
 
   @media (min-width: 1024px) {
@@ -27,43 +27,43 @@ export const Container = styled.div`
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
-    margin-top: 6400px;
-    height: 1600px;
+    margin-top: 8500px;
+    height: 1950px;
   }
 
   @media (max-width: 662px) {
     margin-top: 8500px;
-    height: 1600px;
+    height: 2130px;
   }
 
   @media (max-width: 640px) {
     margin-top: 8500px;
-    height: 1600px;
+    height: 2130px;
   }
 
   @media (max-width: 574px) {
-    margin-top: 8500px;
-    height: 1600px;
+    margin-top: 8600px;
+    height: 2330px;
   }
 
   @media (max-width: 541px) {
     margin-top: 8700px;
-    height: 1600px;
+    height: 2330px;
   }
 
   @media (max-width: 530px) {
-    margin-top: 8900px;
-    height: 1600px;
+    margin-top: 9100px;
+    height: 2330px;
   }
 
   @media (max-width: 518px) {
-    margin-top: 9300px;
-    height: 1600px;
+    margin-top: 9450px;
+    height: 2330px;
   }
 
   @media (max-width: 495px) {
-    margin-top: 9500px;
-    height: 1600px;
+    height: 2330px;
+    margin-top: 9650px;
   }
 `;
 
@@ -71,9 +71,15 @@ export const Content = styled.div`
   background: ${colors.colorPrimary};
   width: 400vw;
   height: 60%;
+
+  @media (max-width: 768px) {
+    height: 30%;
+  }
+
   @media (min-width: 768px) and (max-width: 1024px) {
     height: 40%;
   }
+
   padding: 10px;
 
   border: 0;

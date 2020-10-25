@@ -98,6 +98,9 @@ export const HeaderContainer = styled.div`
           font-size: 18px;
           color: ${colors.colorTextTitle};
           text-align: center;
+          @media (max-width: 768px) {
+            margin-top: 50px;
+          }
         }
         div {
           margin-top: 30px;

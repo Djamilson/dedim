@@ -11,53 +11,53 @@ export const Container = styled.div`
   background: ${colors.colorPrimary};
 
   @media (max-width: 768px) {
-    margin-top: 8800px;
-    height: 400px;
+    margin-top: 10200px;
+    height: 500px;
   }
 
-  @media (min-width: 1024px) {
-    margin-top: 7500px;
+  @media (min-width: 1024px) and (max-width: 1500px) {
+    margin-top: 7700px;
     height: 400px;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
-    margin-top: 200px;
+    margin-top: 10200px;
     height: 400px;
   }
 
   @media (max-width: 662px) {
-    margin-top: 200px;
-    height: 400px;
+    margin-top: 10200px;
+    height: 500px;
   }
 
   @media (max-width: 640px) {
-    margin-top: 200px;
-    height: 400px;
+    margin-top: 10200px;
+    height: 500px;
   }
 
   @media (max-width: 574px) {
-    margin-top: 200px;
-    height: 400px;
+    margin-top: 10300px;
+    height: 500px;
   }
 
   @media (max-width: 541px) {
-    margin-top: 200px;
-    height: 400px;
+    margin-top: 10500px;
+    height: 500px;
   }
 
   @media (max-width: 530px) {
-    margin-top: 200px;
-    height: 400px;
+    margin-top: 10900px;
+    height: 500px;
   }
 
   @media (max-width: 518px) {
-    margin-top: 200px;
-    height: 400px;
+    margin-top: 11350px;
+    height: 500px;
   }
 
   @media (max-width: 495px) {
-    margin-top: 200px;
-    height: 400px;
+    margin-top: 11650px;
+    height: 500px;
   }
 `;
 
@@ -84,21 +84,30 @@ export const FooterContainer = styled.footer`
   }
 
   ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
     margin-top: 20px;
     margin-bottom: 20px;
     border: 0;
+    list-style: none;
+
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 40rem 20rem;
+      grid-gap: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
 
     li {
       list-style: none;
-
       font-size: 14px;
 
       a {
+        @media (min-width: 768px) {
+          margin: 20px 0;
+        }
+
         text-decoration: none;
         color: ${colors.colorTextInPrimary};
 
