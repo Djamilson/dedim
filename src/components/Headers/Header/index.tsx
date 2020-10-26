@@ -11,7 +11,7 @@ const Header: React.FC = () => {
           href="https://github.com/djamilson/iceberg-gatsby-multilang"
           title="Instagram"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <FiInstagram size={26} color="#FFF" />
         </a>
@@ -19,7 +19,7 @@ const Header: React.FC = () => {
           href="https://github.com/djamilson/iceberg-gatsby-multilang"
           title="Instagram"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <FiFacebook size={26} color="#FFF" />
         </a>
@@ -27,7 +27,7 @@ const Header: React.FC = () => {
           href="https://twitter.com/_djamilson"
           title="Twitter"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <FiTwitter size={26} color="#FFF" />
         </a>
