@@ -85,7 +85,7 @@ export const HeaderContainer = styled.div`
     margin-top: 50px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     padding: 20px;
   }
 
@@ -113,7 +113,7 @@ export const HeaderContainer = styled.div`
 
         padding-top: 60px;
 
-        @media (max-width: 375px) {
+        @media (max-width: 414px) {
           padding-top: 10px;
         }
 
@@ -132,7 +132,7 @@ export const HeaderContainer = styled.div`
             margin-top: 50px;
           }
 
-          @media (max-width: 375px) {
+          @media (max-width: 414px) {
             margin-top: 0px;
           }
         }
