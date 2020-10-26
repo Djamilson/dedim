@@ -60,7 +60,7 @@ export const Container = styled.div`
     height: 500px;
   }
 
-  @media (max-width: 360px) {
+  @media (max-width: 375px) {
     margin-top: 11100px;
     height: 500px;
   }
