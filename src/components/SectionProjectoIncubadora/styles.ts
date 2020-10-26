@@ -85,6 +85,10 @@ export const HeaderContainer = styled.div`
     margin-top: 50px;
   }
 
+  @media (max-width: 360px) {
+    padding: 20px;
+  }
+
   ul {
     list-style: none;
 
@@ -109,6 +113,10 @@ export const HeaderContainer = styled.div`
 
         padding-top: 60px;
 
+        @media (max-width: 360px) {
+          padding-top: 10px;
+        }
+
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -122,6 +130,10 @@ export const HeaderContainer = styled.div`
 
           @media (max-width: 768px) {
             margin-top: 50px;
+          }
+
+          @media (max-width: 360px) {
+            margin-top: 0px;
           }
         }
         div {

@@ -59,6 +59,11 @@ export const Container = styled.div`
     margin-top: 11650px;
     height: 500px;
   }
+
+  @media (max-width: 360px) {
+    margin-top: 11100px;
+    height: 500px;
+  }
 `;
 
 export const FooterContainer = styled.footer`

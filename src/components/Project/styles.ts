@@ -22,6 +22,11 @@ export const Container = styled.div`
     margin: 0 auto;
     height: 1600px;
   }
+
+  @media (max-width: 360px) {
+    margin-top: 0px;
+    height: 2100px;
+  }
 `;
 
 export const Content = styled.div`

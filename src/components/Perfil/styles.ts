@@ -26,6 +26,11 @@ export const Container = styled.div`
     margin-top: 1500px;
     height: 1300px;
   }
+
+  @media (max-width: 360px) {
+    margin-top: 2000px;
+    height: 2100px;
+  }
 `;
 
 export const Content = styled.div`
@@ -58,6 +63,10 @@ export const HeaderContainer = styled.div`
   @media (min-width: 768px) and (max-width: 1024px) {
     margin: 0 auto;
     padding: 100px;
+  }
+
+  @media (max-width: 360px) {
+    padding: 20px;
   }
 
   ul {
@@ -98,6 +107,10 @@ export const HeaderContainer = styled.div`
           max-height: 480px;
           height: auto;
           margin-left: 52.4px;
+        }
+
+        @media (max-width: 360px) {
+          height: 300px;
         }
       }
       > div {
@@ -178,6 +191,11 @@ export const HeaderContainer = styled.div`
     li + li {
       @media (min-width: 960px) {
         margin-top: 50px;
+      }
+
+      @media (max-width: 360px) {
+        margin-top: 50px;
+        height: 2100px;
       }
     }
   }
