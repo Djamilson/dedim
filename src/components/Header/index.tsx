@@ -8,7 +8,6 @@ const Header: React.FC = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const handleToggleMenu = () => {
-    console.log('estou vindo do header ');
     setToggleMenu(!toggleMenu);
   };
 

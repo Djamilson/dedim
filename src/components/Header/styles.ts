@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import media from 'styled-media-query';
 
-import { colors, fonts } from '../../styles';
+import { colors } from '../../styles';
 
 export const Container = styled.div`
   background: ${colors.colorPrimary};
@@ -141,9 +141,6 @@ export const Content = styled.div`
     margin-left: 50px;
   `}
 
-
-
-
      img {
       display: none;
       margin-right: 20px;
@@ -177,39 +174,6 @@ export const Content = styled.div`
   aside {
     display: flex;
     align-items: center;
-  }
-`;
-
-export const Profile = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  justify-content: flex-end;
-  align-items: center;
-
-  @media (max-width: 500px) {
-    display: none;
-  }
-
-  strong {
-    display: block;
-    color: ${colors.colorBoxBase};
-    font-size: ${fonts.smaller}px;
-    font-weight: bold;
-  }
-`;
-
-export const Badge = styled.button`
-  background: none;
-  border: 0;
-  width: 100%;
-  display: inline-block;
-  margin: 0.5em;
-  color: #fff;
-  font-size: ${fonts.small}px;
-
-  @media (max-width: 550px) {
-    display: none;
   }
 `;
 
