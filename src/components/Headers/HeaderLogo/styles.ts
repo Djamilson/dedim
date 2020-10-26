@@ -47,7 +47,7 @@ export const HeaderContainer = styled.div`
       margin-left: calc(50%) px;
     }
 
-    @media (max-width: 360px) {
+    @media (max-width: 375px) {
       padding: 10px;
       margin: 15px;
     }
