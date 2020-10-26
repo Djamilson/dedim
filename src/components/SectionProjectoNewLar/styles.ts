@@ -65,6 +65,11 @@ export const Container = styled.div`
     height: 2330px;
     margin-top: 9650px;
   }
+
+  @media (max-width: 360px) {
+    height: 2800px;
+    margin-top: 9250px;
+  }
 `;
 
 export const Content = styled.div`
@@ -99,6 +104,10 @@ export const HeaderContainer = styled.div`
     margin-top: 50px;
   }
 
+  @media (max-width: 360px) {
+    padding: 20px;
+  }
+
   ul {
     list-style: none;
 
@@ -123,6 +132,10 @@ export const HeaderContainer = styled.div`
 
         padding-top: 60px;
 
+        @media (max-width: 360px) {
+          padding: 0px;
+        }
+
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -143,6 +156,10 @@ export const HeaderContainer = styled.div`
 
           @media (max-width: 768px) {
             margin-right: 0px;
+          }
+
+          @media (max-width: 360px) {
+            margin: 10px;
           }
 
           border: none;

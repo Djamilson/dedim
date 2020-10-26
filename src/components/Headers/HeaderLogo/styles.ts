@@ -46,5 +46,10 @@ export const HeaderContainer = styled.div`
       height: 3rem;
       margin-left: calc(50%) px;
     }
+
+    @media (max-width: 360px) {
+      padding: 10px;
+      margin: 15px;
+    }
   }
 `;

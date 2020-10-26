@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import media from 'styled-media-query';
 
 export const Container = styled.div`
   width: 100vw;
@@ -10,22 +9,6 @@ export const Container = styled.div`
   align-items: initial;
   flex-direction: column;
   position: absolute;
-
-
- ${media.lessThan('medium')`
-    /* screen width is less than 768px (medium) */
-    background: red;
-  `}
-
-  ${media.between('medium', 'large')`
-    /* screen width is between 768px (medium) and 1170px (large) */
-    background: green;
-  `}
-
-  ${media.greaterThan('large')`
-    /* screen width is greater than 1170px (large) */
-    background: blue;
-  `}
 `;
 
 export const Section = styled.div`

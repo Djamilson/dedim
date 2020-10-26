@@ -35,6 +35,11 @@ export const Container = styled.div`
   @media (max-width: 630px) {
     height: 2650px;
   }
+
+  @media (max-width: 360px) {
+    margin-top: 2900px;
+    height: 2650px;
+  }
 `;
 
 export const Content = styled.div`
@@ -60,6 +65,9 @@ export const HeaderContainer = styled.div`
     margin-top: 50px;
   }
 
+  @media (max-width: 360px) {
+    padding: 20px;
+  }
   ul {
     list-style: none;
 

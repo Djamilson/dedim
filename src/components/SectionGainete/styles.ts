@@ -66,6 +66,9 @@ export const HeaderContainer = styled.div`
     margin-top: 50px;
   }
 
+  @media (max-width: 360px) {
+    padding: 20px;
+  }
   ul {
     list-style: none;
 
